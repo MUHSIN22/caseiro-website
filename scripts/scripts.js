@@ -149,3 +149,40 @@ const closeSearch = () => {
         })
     })
 }
+
+
+
+// Opening and closing of modal & modal related functions
+
+const openModal = () =>{
+    $(".modal-wrapper").css({display:'grid'})
+    $(".modal-wrapper").animate({opacity:1},200,() => {
+        $(".modal-container").animate({opacity:1},500)
+    })
+}
+
+const closeModal = () => {
+    $(".modal-container").animate({opacity:0},100,() => {
+        $(".modal-wrapper").animate({opacity:0},100,()=>{
+            $(".modal-wrapper").css({display:'none'})
+        })
+    })
+}
+
+
+// Menu toggling functions
+const toggleMenu = () => {
+    let index = 0;
+    $(".menu-icon").toggleClass("active")
+    $(".mobile-menu").toggleClass("mobile-menu__active")
+    
+    const menuItems = $(".menu--item")
+    const menuLength = menuItems.length
+
+    menuItems.css({opacity:0});
+    for(let i=0;i<menuLength;i++){
+        setTimeout(() =>{
+            menuItems.eq(i).animate({opacity:1})
+        },200)
+    }
+};

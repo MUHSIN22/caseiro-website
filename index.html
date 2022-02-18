@@ -15,11 +15,12 @@
 
         </div>
         <div class="head">
-			<div class="hamburger">
-                <hr class="line">
-                <hr class="line">
-                <hr class="line">
-            </div>
+			<div class="menu-icon" onclick="toggleMenu()">
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
             <ul id="category-list">
                 <li>
                     <a class="category category--active" href="#">Art</a>
@@ -64,6 +65,30 @@
 				<i class="material-icons-outlined close-icon" onclick="closeSearch()">close</i>
 			</div>
 		</form>
+
+		<ul class="mobile-menu">
+			<li>
+				<a class="menu--item" href="#">Art</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Food</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Fashion</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Gift</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Beauty</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">About</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Support</a>
+			</li>
+		</ul>
     </header>
 
 	<!-- Main secction -->
@@ -496,7 +521,7 @@
 				<i class="forward-navigation material-icons-outlined" onclick="slideHomeProducts('forward')">arrow_forward_ios</i>
 				<i class="backward-navigation material-icons-outlined" onclick="slideHomeProducts('back')">arrow_back_ios</i>
 				<div class="products--slider">
-					<div class="product--card">
+					<div class="product--card" onclick="openModal()">
 						<div class="card--image-wrapper">
 							<img class="product--image" src="assets/images/ck.jpg" alt="">
 							<img class="product--provider" src="assets/images/vertus.png" alt="">
@@ -613,6 +638,46 @@
 		</section>
     </main>
 
+	<section class="modal-wrapper">
+		<div class="modal-container">
+			<i class="material-icons-outlined modal-close" onclick="closeModal()">close</i>
+			<img src="assets/images/ck.jpg" class="modal--product-image" alt="">
+			<div class="modal--product-details">
+				<h1 class="product-name">Wajah Ceramic Vase</h1>
+				<p class="product-price">AED 500.00</p>
+
+				<div class="colors-wrapper">
+					<h4 class="modal--title">Colors<h4/>
+					<ul class="colors">
+						<li class="color"></li>
+						<li class="color"></li>
+						<li class="color"></li>
+					</ul>
+				</div>
+
+				<div class="quantity-wrapper">
+					<h4 class="modal--title">Quantity</h4>
+					<div class="quantity-and-stock-wrapper">
+						<ul class="quantity-changer">
+							<li class="quantity">1</li>
+							<li class="quantity-decreament">-</li>
+							<li class="quantity-increament">+</li>
+						</ul>
+						<div class="stock-status-wrapper">
+							<i class="material-icons-outlined stock-status-icon">
+								done
+							</i>
+							<p class="stock-status">In Stock Online</p>
+						</div>
+					</div>
+				</div>
+				<button class="btn-add-to-cart">Add to cart</button>
+				<a href="#">View full details</a>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Footer -->
 	<footer>
 		<img src="assets/images/footer logo.png" class="footer-logo" alt="">
 		<div class="help-container">
