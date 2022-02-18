@@ -73,6 +73,48 @@ header{
     .hamburger{
         display: none;
     }
+    .search-container{
+        padding: 0.5rem clamp(1rem,12%,15rem);
+        background: #fff;
+        display: none;
+        height: 0;
+        .search-wrapper{
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            border-radius: 5px;
+            margin: 0 1rem;
+            background: $muted;
+            display: none;
+            opacity: 0;
+        }
+        .search-input{
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            background: transparent;
+        }
+        .btn-search{
+            background: $gradient-primary;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .close-icon{  
+            font-size: 2rem;
+            align-self: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        .search-icon{
+            margin-right: 1rem;
+        }
+    }
 }
 
 
@@ -478,6 +520,12 @@ footer{
         .head{
             padding: 0 clamp(1rem,5%,15rem);
         }
+        .search-container{
+            padding: 0.5rem clamp(1rem,5%,15rem);;
+            .search-wrapper{
+                margin: 0;
+            }
+        }
     }
     
 
@@ -532,6 +580,9 @@ footer{
             font-size: 1rem;
             margin: 0.5rem;
         }
+        .search-container{
+            padding: 0.5rem 1rem;
+        }
     }
 
     .speciality{
@@ -571,13 +622,14 @@ footer{
             justify-content: space-between;
             align-items: center;
             height: 4rem;
-            padding: 0 4rem;
         }
         #category-list{
             display: none;
         }
         #core-list{
-            display: none;
+            .core-rm{
+                display: none;
+            }
         }
         .hamburger{
             display: flex;
@@ -706,6 +758,29 @@ footer{
     header{
        .head{
            padding: 0 1rem;
+       }
+       .search-container{
+           width: 100%;
+           .search-wrapper{
+               width: 100%;
+           }
+           .search-input{
+               font-size: 14px;
+               order: 1;
+           }
+           .btn-search{
+               font-size: 0.8rem;
+               display: none;
+           }
+           .search-icon{
+               order: 2;
+               margin: 0;
+           }
+           .close-icon{
+               font-size: 1.4rem;
+               order: 3;
+               margin-left: 3px;
+           }
        }
     }
     .landing{

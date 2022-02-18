@@ -87,6 +87,63 @@ header .hamburger {
   display: none;
 }
 
+header .search-container {
+  padding: 0.5rem clamp(1rem, 12%, 15rem);
+  background: #fff;
+  display: none;
+  height: 0;
+}
+
+header .search-container .search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 0 1rem;
+  background: #eeeeee;
+  display: none;
+  opacity: 0;
+}
+
+header .search-container .search-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+}
+
+header .search-container .btn-search {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
+  background: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header .search-container .close-icon {
+  font-size: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+header .search-container .search-icon {
+  margin-right: 1rem;
+}
+
 .landing {
   width: 100%;
   height: 100vh;
@@ -605,6 +662,12 @@ footer .footer--link {
   header .head {
     padding: 0 clamp(1rem, 5%, 15rem);
   }
+  header .search-container {
+    padding: 0.5rem clamp(1rem, 5%, 15rem);
+  }
+  header .search-container .search-wrapper {
+    margin: 0;
+  }
   .landing .carousel--item {
     padding: 0 clamp(1rem, 5%, 15rem);
   }
@@ -646,6 +709,9 @@ footer .footer--link {
     font-size: 1rem;
     margin: 0.5rem;
   }
+  header .search-container {
+    padding: 0.5rem 1rem;
+  }
   .speciality {
     padding: 11rem 1rem;
   }
@@ -681,12 +747,11 @@ footer .footer--link {
         -ms-flex-align: center;
             align-items: center;
     height: 4rem;
-    padding: 0 4rem;
   }
   header #category-list {
     display: none;
   }
-  header #core-list {
+  header #core-list .core-rm {
     display: none;
   }
   header .hamburger {
@@ -809,6 +874,35 @@ footer .footer--link {
 @media only screen and (max-width: 550px) {
   header .head {
     padding: 0 1rem;
+  }
+  header .search-container {
+    width: 100%;
+  }
+  header .search-container .search-wrapper {
+    width: 100%;
+  }
+  header .search-container .search-input {
+    font-size: 14px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  header .search-container .btn-search {
+    font-size: 0.8rem;
+    display: none;
+  }
+  header .search-container .search-icon {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0;
+  }
+  header .search-container .close-icon {
+    font-size: 1.4rem;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-left: 3px;
   }
   .landing .carousel--item {
     padding: 0 1rem;

@@ -124,3 +124,28 @@ const productSlide = () => {
     }
 }
 
+
+// Search opening
+const openSearch = () => {
+    $('.search-icon--link').animate({'font-size':0},300,() => {
+        $(".search-container").css({display:'block'})
+        $(".search-wrapper").css({display:'flex'})
+        $(".search-container").animate({
+            height: '100%'
+        },100,() => {
+            $(".search-wrapper").animate({opacity:1},300)
+        })
+    })
+    $(".search-icon-wrapper").animate({width:0,margin:0})
+}
+
+const closeSearch = () => {
+    $('.search-wrapper').animate({opacity:0},100,()=>{
+        $(".search-container").animate({height: 0},100,()=>{
+            $(".search-container").css({display:'none'})
+            $(".search-wrapper").css({display:'none'})
+            $(".search-icon-wrapper").animate({width:'1.5rem',margin:'0 1rem'})
+            $(".search-icon--link").animate({'font-size':'1.5rem'},300)
+        })
+    })
+}

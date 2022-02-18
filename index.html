@@ -15,6 +15,11 @@
 
         </div>
         <div class="head">
+			<div class="hamburger">
+                <hr class="line">
+                <hr class="line">
+                <hr class="line">
+            </div>
             <ul id="category-list">
                 <li>
                     <a class="category category--active" href="#">Art</a>
@@ -35,16 +40,13 @@
             <img src="/assets/logo.png" class="logo" alt="">
             <ul id="core-list">
                 <li>
-                    <a class="category" href="#">About</a>
+                    <a class="category core-rm" href="#">About</a>
                 </li>
                 <li>
-                    <a class="category" href="#">Support</a>
+                    <a class="category core-rm" href="#">Support</a>
                 </li>
-                <li>
-                    <a class="category" href="#">About</a>
-                </li>
-                <li class="category">
-                    <i class="material-icons">search</i>
+                <li class="category search-icon-wrapper" onclick="openSearch()">
+                    <i class="material-icons search-icon--link">search</i>
                 </li> 
                 <li class="category">
                     <i class="material-icons">person_outline</i>
@@ -53,12 +55,15 @@
                     <i class="material-icons-outlined">shopping_bag</i>
                 </li>
             </ul>
-            <div class="hamburger">
-                <hr class="line">
-                <hr class="line">
-                <hr class="line">
-            </div>
         </div>
+		<form class="search-container">
+			<div class="search-wrapper">
+				<i class="material-icons search-icon">search</i>
+				<input type="search" name="search" placeholder="Search here..." id="search-input" class="search-input">
+				<button type="submit" class="btn-search">Search</button>
+				<i class="material-icons-outlined close-icon" onclick="closeSearch()">close</i>
+			</div>
+		</form>
     </header>
 
 	<!-- Main secction -->
