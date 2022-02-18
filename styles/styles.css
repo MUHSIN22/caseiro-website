@@ -163,7 +163,7 @@ header .search-container .search-icon {
 }
 
 .landing .carousel--item {
-  background-image: url("/assets/images/caseiro banner 1.jpg");
+  background-image: url("assets/images/caseiro banner 1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: calc(100% / 3);
