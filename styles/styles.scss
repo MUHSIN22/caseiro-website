@@ -296,7 +296,6 @@ header{
 
 
 // Category shopping part
-
 .category-shopping{
     padding: 0 clamp(1rem,12%,15rem);
     padding-top: 11rem;
@@ -970,6 +969,7 @@ footer{
     .product-section{
         .products--slider{
             flex-wrap: wrap;
+            transition: all 0.3s ease;
         }
         .product--card{
             width: calc(100% / 6 - 2rem);

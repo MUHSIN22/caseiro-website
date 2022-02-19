@@ -50,6 +50,13 @@ const bannerDotClickSlider = () => {
 
 // home product slide
 const slideHomeProducts = (direction) =>{
+    let timeout;
+    if($(window).innerWidth() <= 768){
+        timeout = 300
+    }else{
+        timeout = 1000
+    }
+
     if(direction === 'forward' && homeProductSlideActive<2){
         homeProductSlideActive++; 
     }else if(direction === 'back' && homeProductSlideActive > 0){
@@ -62,7 +69,7 @@ const slideHomeProducts = (direction) =>{
     setTimeout(() => {
         $(".product--dot__active").removeClass("product--dot__active")
         $(".product--dot").eq(homeProductSlideActive).addClass("product--dot__active");
-    },1000)
+    },timeout)
 }
 
 const productDotClickSlider = () => {

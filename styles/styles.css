@@ -1112,6 +1112,8 @@ footer .footer--link {
   .product-section .products--slider {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
   .product-section .product--card {
     width: calc(100% / 6 - 2rem);
