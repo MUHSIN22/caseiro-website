@@ -9,21 +9,23 @@ $(document).ready(() => {
     bannerDotClickSlider();
     productDotClickSlider();
     if($(window).innerWidth() <= 768){
+        console.log("here");
         productTouchSlider()
     }
 })
 
 // Banner slide functions
 const autoSlider = () => {
-    let direction = 'forward';
     if( bannerSlideIndex === 2){
         direction = 'backward'
     }else if( bannerSlideIndex === 0){
         direction = 'forward'
     }
     
+
     direction === "forward" ? bannerSlideIndex++: bannerSlideIndex--;
-    
+    console.log(bannerSlideIndex);
+
     $(".carousel").css("margin-left",`-${ bannerSlideIndex*100}%`)
     $(".dot__active").removeClass("dot__active")
     $(".dot").eq(bannerSlideIndex).addClass("dot__active");
@@ -175,7 +177,7 @@ const toggleMenu = () => {
     let index = 0;
     $(".menu-icon").toggleClass("active")
     $(".mobile-menu").toggleClass("mobile-menu__active")
-    
+
     const menuItems = $(".menu--item")
     const menuLength = menuItems.length
 

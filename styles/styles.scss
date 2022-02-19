@@ -126,6 +126,8 @@ header{
         display: none;
         transform: translateX(-100%);
         transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        height: 0;
+        opacity: 0;
         li{
             padding: 1rem 2rem;
         }
@@ -139,6 +141,8 @@ header{
     }
     .mobile-menu__active{
         transform: translateX(0);
+        height: calc(100vh - 4rem);
+        opacity: 1;
     }
 }
 
@@ -171,6 +175,13 @@ header{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        &:nth-child(2){
+            background-image: url('/assets/images/arabic.jpg');
+            justify-content: center;
+            align-items: flex-end;
+            text-align: right;
+            
+        }
     }
     .carousel--header{
         font-size: 3rem;
