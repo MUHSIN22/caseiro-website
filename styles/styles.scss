@@ -1048,7 +1048,15 @@ footer{
     .landing{
         .carousel--item{
             padding: 0 1rem;
+            // Arabic
+            &:nth-child(2){
+                .carousel--header{
+                    line-height: 37px;
+                }
+            }
+
         }
+
         .carousel--header{
             font-size: 1.5rem;
             max-width: 15rem;

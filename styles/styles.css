@@ -1194,6 +1194,9 @@ footer .footer--link {
   .landing .carousel--item {
     padding: 0 1rem;
   }
+  .landing .carousel--item:nth-child(2) .carousel--header {
+    line-height: 37px;
+  }
   .landing .carousel--header {
     font-size: 1.5rem;
     max-width: 15rem;
