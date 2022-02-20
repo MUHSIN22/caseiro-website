@@ -711,6 +711,49 @@ footer{
 }
 
 
+
+// Prouduct listing page
+.products-listing{
+    padding: 6rem 12%;
+    .products-listing--title{
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 1rem;
+    }
+    .products-list-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product--card{
+        width: calc(100% / 4 - 2rem);
+        margin: 1rem;
+    }
+    .card--image-wrapper{
+        width: 100%;
+        height: calc(100vw / 4);
+        position: relative;
+    }
+    .product--image{
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+    .product--provider{
+        position: absolute;
+        bottom: 4px;
+        left: 4px;
+        width: 30%;
+    }
+    .product-card--title{
+        margin-top: 1rem;
+    }
+    .product--price{
+        margin-top: 1rem;
+        color: $gray;
+    }
+}
+
 @media only screen and (max-width:1350px) {
     header{
         .head{
@@ -764,6 +807,9 @@ footer{
             left: 1%;
         }
 
+    }
+    .products-listing{
+        padding: 6rem 5%;
     }
 
 }
@@ -917,7 +963,8 @@ footer{
         }
     }
 
-    .product-section{
+    .product-section,
+    .products-listing{
         .product-card--title{
             font-size: 1rem;
 
@@ -926,6 +973,9 @@ footer{
             font-size: 0.9rem;
             margin-top: 0.4rem;
         }
+    }
+    .products-listing{
+        padding: 6rem 1rem;
     }
 
     .modal-wrapper{
@@ -984,6 +1034,21 @@ footer{
             display: none;
         }
     }
+    .products-listing{
+        .product--card{
+            width: calc(100%/3 - 2rem);
+        }
+        .card--image-wrapper{
+            height: calc(100vw / 3)
+        }
+        .product--price{
+            font-size: 0.8rem;
+        }
+        .product-card--title{
+            font-size: 14px;
+        }
+    }
+
     .modal-wrapper{
         .modal-container{
             grid-template-columns: 1fr 1fr;
@@ -1260,6 +1325,24 @@ footer{
             }
         }
 
+    }
+
+    .products-listing{
+        .products-listing--title{
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+        .products-list-wrapper{
+            justify-content: space-between;
+        }
+        .product--card{
+            width: calc(100% / 2 - 0.5rem);
+            margin: 0.5rem 0;
+        }
+        .card--image-wrapper{
+            height: calc(100vw / 2);
+
+        }
     }
 }
 
