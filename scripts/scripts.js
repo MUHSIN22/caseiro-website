@@ -8,8 +8,8 @@ $(document).ready(() => {
     slideInterval = setInterval(autoSlider,5000);
     bannerDotClickSlider();
     productDotClickSlider();
+    bannerDragSlider();
     if($(window).innerWidth() <= 768){
-        console.log("here");
         productTouchSlider()
     }
 })
@@ -21,10 +21,8 @@ const autoSlider = () => {
     }else if( bannerSlideIndex === 0){
         direction = 'forward'
     }
-    
 
     direction === "forward" ? bannerSlideIndex++: bannerSlideIndex--;
-    console.log(bannerSlideIndex);
 
     $(".carousel").css("margin-left",`-${ bannerSlideIndex*100}%`)
     $(".dot__active").removeClass("dot__active")
@@ -45,6 +43,51 @@ const bannerDotClickSlider = () => {
         
         slideInterval = setInterval(autoSlider,5000);
     });
+}
+const bannerDragSlider = () => {
+    let pos1,pos2;
+    $('.carousel').on('mousedown',(event)=>{
+        event = event || window.event;
+        pos1 = event.originalEvent.clientX 
+        $('.carousel').css({cursor:'grabbing'})
+    })
+    $('.carousel').on('mouseup',(event) => {
+        event = event || window.event;
+        pos2 = event.originalEvent.clientX;
+        bannerSliderController(pos1,pos2);
+        $('.carousel').css({cursor:'grab'})
+    })
+
+    $('.carousel').on('touchstart',(event) => {
+        event = event || window.event;
+        pos1 = event.originalEvent.clientX 
+    })
+    $('.carousel').on('touchend',(event) => {
+        event = event || window.event;
+        let touch = event.touches[0] || event.changedTouches[0]
+        posX2 = touch.pageX 
+        bannerSliderController(pos1,pos2)
+    })
+
+
+    
+}
+
+const bannerSliderController = (pos1,pos2) => {
+    if(pos1 > pos2 && pos1 - pos2 > 100){
+        if( bannerSlideIndex !== 2){
+            bannerSlideIndex++;
+        }
+    }else if(pos2 > pos1 && pos2 - pos1 > 100){
+        if( bannerSlideIndex !== 0){
+            bannerSlideIndex--;
+        }
+    }
+    clearInterval(slideInterval);
+    $(".carousel").css("margin-left",`-${ bannerSlideIndex*100}%`)
+    $(".dot__active").removeClass("dot__active")
+    $(".dot").eq(bannerSlideIndex).addClass("dot__active");
+    slideInterval = setInterval(autoSlider,5000);
 }
 
 
