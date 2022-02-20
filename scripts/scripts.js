@@ -54,7 +54,7 @@ const slideHomeProducts = (direction) =>{
     if($(window).innerWidth() <= 768){
         timeout = 300
     }else{
-        timeout = 1000
+        timeout = 600
     }
 
     if(direction === 'forward' && homeProductSlideActive<2){
