@@ -454,6 +454,38 @@ header{
         height: calc(100vw / 4);
         position: relative;
     }
+    .card-btn-view--wrapper{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.3s ease;
+        &:hover{
+            opacity: 1;
+        }
+        &:hover .btn-view{
+            transform: scale(1);
+        }
+    }
+    .btn-view{
+        width: 85%;
+        margin: auto;
+        border: none;
+        padding: 0.9rem 1rem;
+        font-weight: 600;
+        font-size: 16px;
+        background: #fff;
+        color: $light-pink;
+        border-radius: 10px;
+        cursor: pointer;
+        transform: scale(0);
+    }
     .product--image{
         width: 100%;
         height: 100%;
@@ -742,6 +774,38 @@ footer{
     .product--price{
         margin-top: 1rem;
         color: $gray;
+    }
+    .card-btn-view--wrapper{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.3s ease;
+        &:hover{
+            opacity: 1;
+        }
+        &:hover .btn-view{
+            transform: scale(1);
+        }
+    }
+    .btn-view{
+        width: 85%;
+        margin: auto;
+        border: none;
+        padding: 0.9rem 1rem;
+        font-weight: 600;
+        font-size: 16px;
+        background: #fff;
+        color: $light-pink;
+        border-radius: 10px;
+        cursor: pointer;
+        transform: scale(0);
     }
 }
 
@@ -1357,6 +1421,12 @@ footer{
         .product--slider-wrapper{
             margin-top: 3rem;
         }
+        .btn-view {
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 5px;
+        }
     }
 
     footer{
@@ -1428,7 +1498,12 @@ footer{
         }
         .card--image-wrapper{
             height: calc(100vw / 2);
-
+        }
+        .btn-view {
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 5px;
         }
     }
 
