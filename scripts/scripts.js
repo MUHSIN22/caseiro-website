@@ -207,7 +207,7 @@ const closeSearch = () => {
 // Opening and closing of modal & modal related functions
 
 const openModal = () =>{
-    $(".modal-wrapper").css({display:'grid'})
+    $(".modal-wrapper").css({display:'flex'})
     $(".modal-wrapper").animate({opacity:1},200,() => {
         $(".modal-container").animate({opacity:1},500)
     })
