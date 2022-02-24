@@ -238,3 +238,17 @@ const toggleMenu = () => {
         },200)
     }
 };
+
+
+
+// Filter animations
+const openFilter = () => {
+    $(".filter-navigation").css({display: "block"})
+    $(".filter-navigation").animate({opacity:1},300)
+}
+
+const closeFilter = () => {
+    $(".filter-navigation").animate({opacity:0},300,() => {
+        $(".filter-navigation").css({display: "none"})
+    })
+}

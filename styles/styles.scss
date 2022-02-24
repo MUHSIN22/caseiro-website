@@ -736,8 +736,67 @@ footer{
 
 
 // Prouduct listing page
+.products-page-wrapper{
+    padding-top: 6rem;
+    margin-bottom: 6rem;
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 'nav products';
+    grid-template-columns: 15rem auto;
+    grid-gap: 2rem;
+    .filter-navigation{
+        grid-area: nav;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .nav-header{
+        display: none;
+    }
+    .filter-wrapper{
+        padding: 1rem;
+        border-bottom: 1.5px solid rgba(155, 136, 136, 0.4);
+    }
+    .filter--object{
+        list-style: none;
+    }
+    .check{
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+    li{
+        padding: 0.5rem 0;
+    }
+    .color--indicator{
+        width:1rem;
+        height:1rem;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .color--red{
+        background: red;
+    }
+    .color--blue{
+        background: blue;
+    }
+    .color--orange{
+        background: orange;
+    }
+    .color--pink{
+        background: pink;
+    }
+    .number-of-items{
+        color: $gray;
+    }
+}
+
+.btn-filter{
+    display: none;
+}
+
 .products-listing{
-    padding: 6rem 12%;
+    grid-area: products;
+    height: 100%;
+    overflow-y: scroll;
     .products-listing--title{
         font-size: 2rem;
         font-weight: 500;
@@ -748,12 +807,12 @@ footer{
         flex-wrap: wrap;
     }
     .product--card{
-        width: calc(100% / 4 - 2rem);
+        width: calc(100% / 5 - 2rem);
         margin: 1rem;
     }
     .card--image-wrapper{
         width: 100%;
-        height: calc(100vw / 4);
+        height: calc(100vw / 5);
         position: relative;
     }
     .product--image{
@@ -943,8 +1002,16 @@ footer{
         }
 
     }
+
     .products-listing{
-        padding: 6rem 5%;
+        .product--card{
+            width: calc(100% / 4 - 2rem)
+        }
+
+        .card--image-wrapper{
+            height: calc( 100vw / 4)
+        }
+
     }
 
     .sellers-card-container{
@@ -994,6 +1061,12 @@ footer{
     footer{
         padding: 2rem 1rem;
 
+    }
+
+    .products-listing{
+        .product--card{
+            width: calc(100% / 3 - 2rem);
+        }
     }
 
     .sellers-card-container{
@@ -1119,9 +1192,7 @@ footer{
             margin-top: 0.4rem;
         }
     }
-    .products-listing{
-        padding: 6rem 1rem;
-    }
+    
 
     .modal-wrapper{
         .modal-container{
@@ -1179,6 +1250,51 @@ footer{
             display: none;
         }
     }
+
+    .products-page-wrapper{
+        height: auto;
+        padding-top: 5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'products';
+        .filter-navigation{
+            position: fixed;
+            background: #Fff;
+            z-index: 100000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding-top: 4rem;
+            display: none;
+            opacity: 0;
+        }
+        .nav-header{
+            padding: 1rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            background: #fff;
+            i{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .btn-filter{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 1rem;
+        font-size: 3rem;
+        background: $gradient-primary;
+        border-radius: 50%;
+        border: none;
+        color: #fff;
+        z-index: 1000;
+        display: block;
+    }
+
     .products-listing{
         .product--card{
             width: calc(100%/3 - 2rem);
@@ -1191,6 +1307,10 @@ footer{
         }
         .product-card--title{
             font-size: 14px;
+        }
+        .products-listing--title{
+            font-size: 24px;
+            margin: 0 1rem;
         }
     }
 
@@ -1484,9 +1604,29 @@ footer{
 
     }
 
+    .products-page-wrapper{
+        .filter-navigation{
+            padding-top: 2rem;
+        }
+        .filter--title{
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+        .category,
+        .brand,
+        .price,
+        .color{
+            font-size: 14px;
+        }
+        .nav-header{
+            padding: 0.8rem 1rem;
+        }
+    }
+
     .products-listing{
+        padding: 0 1rem;
         .products-listing--title{
-            margin: 1rem 0;
+            margin: 0.5rem 0;
             font-size: 1.2rem;
         }
         .products-list-wrapper{

@@ -90,199 +90,321 @@
 			</li>
 		</ul>
     </header>
-    <main class="products-listing">
-        <h2 class="products-listing--title">Products for you</h2>
-        <div class="products-list-wrapper">
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
-                    </div>
-                </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
+    
+    <button class="btn-filter material-icons-outlined" onclick="openFilter()">filter_alt</button>
+
+    <main class="products-page-wrapper">
+        <nav class="filter-navigation">
+            <div class="nav-header">
+                <i class="material-icons-outlined" onclick="closeFilter()">arrow_back</i>
+            </div>
+            <div class="filter-wrapper">
+                <h3 class="filter--title">Categories</h3>
+                <ul class="categories filter--object">
+                    <li class="category">
+                        <input type="checkbox" name="art/decore" class="check category--checkbox">
+                        <span>Art/Decore</span>
+                        <span class="number-of-items">(12)</span>
+                    </li>
+                    <li class="category">
+                        <input type="checkbox" name="food" class="check category--checkbox">
+                        <span>Food</span>
+                        <span class="number-of-items">(12)</span>
+                    </li>
+                    <li class="category">
+                        <input type="checkbox" name="fashion" class="check category--checkbox">
+                        <span>Fashion</span>
+                        <span class="number-of-items">(12)</span>
+                    </li>
+                    <li class="category">
+                        <input type="checkbox" name="gifts" class="check category--checkbox">
+                        <span>Gifts</span>
+                        <span class="number-of-items">(12)</span>
+                    </li>
+                    <li class="category">
+                        <input type="checkbox" name="beauty" class="check category--checkbox">
+                        <span>Beauty</span>
+                        <span class="number-of-items">(12)</span>
+                    </li>
+                </ul>
             </div>
 
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
-                    </div>
-                </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
+            <div class="filter-wrapper">
+                <h3 class="filter--title">Brands</h3>
+                <ul class="brands filter--object">
+                    <li class="brand">
+                        <input type="checkbox" name="vertus" class="check brand--checkbox">
+                        <span>Vertus</span>
+                        <span class="number-of-items">(121)</span>
+                    </li>
+                    <li class="brand">
+                        <input type="checkbox" name="splash" class="check brand--checkbox">
+                        <span>Splash</span>
+                        <span class="number-of-items">(33)</span>
+                    </li>
+                    <li class="brand">
+                        <input type="checkbox" name="namshi" class="check brand--checkbox">
+                        <span>Namshi</span>
+                        <span class="number-of-items">(24)</span>
+                    </li>
+                    <li class="brand">
+                        <input type="checkbox" name="ajmal" class="check brand--checkbox">
+                        <span>Ajmal</span>
+                        <span class="number-of-items">(132)</span>
+                    </li>
+                </ul>
             </div>
 
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
-                    </div>
-                </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
+            <div class="filter-wrapper">
+                <h3 class="filter--title">Colors</h3>
+                <ul class="colors filter--object">
+                    <li class="color">
+                        <input type="checkbox" name="red" class="check color--checkbox">
+                        <span class="color--indicator color--red"></span>
+                        <span>Red</span>
+                        <span class="number-of-items">(121)</span>
+                    </li>
+                    <li class="color">
+                        <input type="checkbox" name="blue" class="check color--checkbox">
+                        <span class="color--indicator color--blue"></span>
+                        <span>Blue</span>
+                        <span class="number-of-items">(33)</span>
+                    </li>
+                    <li class="color">
+                        <input type="checkbox" name="orange" class="check color--checkbox">
+                        <span class="color--indicator color--orange"></span>
+                        <span>Orange</span>
+                        <span class="number-of-items">(24)</span>
+                    </li>
+                    <li class="color">
+                        <input type="checkbox" name="pink" class="check color--checkbox">
+                        <span class="color--indicator color--pink"></span>
+                        <span>Pink</span>
+                        <span class="number-of-items">(132)</span>
+                    </li>
+                </ul>
             </div>
 
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
-                    </div>
-                </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
+            <div class="filter-wrapper">
+                <h3 class="filter--title">Price</h3>
+                <ul class="prices filter--object">
+                    <li class="price">
+                        <input type="checkbox" name="below_thousand" class="check price--checkbox">
+                        <span>Below 1000</span>
+                        <span class="number-of-items">(121)</span>
+                    </li>
+                    <li class="price">
+                        <input type="checkbox" name="thousand_to_twothousand" class="check price--checkbox">
+                        <span>1000-2000</span>
+                        <span class="number-of-items">(33)</span>
+                    </li>
+                    <li class="price">
+                        <input type="checkbox" name="twothousand_to_fivethousand" class="check price--checkbox">
+                        <span>2000-5000</span>
+                        <span class="number-of-items">(24)</span>
+                    </li>
+                    <li class="price">
+                        <input type="checkbox" name="above_fivethousand" class="check price--checkbox">
+                        <span>Above 5000</span>
+                        <span class="number-of-items">(132)</span>
+                    </li>
+                </ul>
             </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+        </nav>
+        <div class="products-listing">
+            <h2 class="products-listing--title">Products for you</h2>
+            <div class="products-list-wrapper">
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
-            </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
-            </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
-            </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
-            </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
-            </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
-            </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
-            </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
-            </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
-            </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
-            </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
-            </div>
-
-            <div class="product--card">
-                <div class="card--image-wrapper">
-                    <img class="product--image" src="assets/images/ck.jpg" alt="">
-                    <img class="product--provider" src="assets/images/vertus.png" alt="">
-                    <div class="card-btn-view--wrapper">
-                        <button class="btn-view" onclick="openModal()">Quick view</button>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
                     </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
                 </div>
-                <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
-                <p class="product--price">AED 500.00</p>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                    </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
+                </div>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                    </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
+                </div>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                    </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
+                </div>
+    
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img class="product--image" src="assets/images/ck.jpg" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                    </div>
+                    <h3 class="product-card--title">Calvin Klein One for Unisex</h3>
+                    <p class="product--price">AED 500.00</p>
+                </div>
             </div>
         </div>
     </main>
