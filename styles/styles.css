@@ -1041,6 +1041,10 @@ footer .footer--link {
   margin: 1rem;
 }
 
+.products-listing .product-card--title {
+  font-size: 1rem;
+}
+
 .products-listing .card--image-wrapper {
   width: 100%;
   height: calc(100vw / 5);
