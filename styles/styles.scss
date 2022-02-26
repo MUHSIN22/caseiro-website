@@ -5,6 +5,7 @@ $light-pink:#c44786;
 $light-orange: #e55c5b;
 $muted: #eeeeee;
 $black: #0c0c0c;
+$main-bg: rgb(238, 238 , 238);
 $gray: #8d8d8d;
 $gradient-primary: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
 
@@ -737,6 +738,7 @@ footer{
 
 // Prouduct listing page
 .products-page-wrapper{
+    background-color: $main-bg;
     padding-top: 6rem;
     margin-bottom: 6rem;
     display: grid;
@@ -873,13 +875,15 @@ footer{
 
 
 .sellers-card-container{
-    padding: 6rem 12%;
+    background-color: $main-bg;
+
     .sellers-card--wrapper{
         display: flex;
         flex-wrap: wrap;
     }
+
     .sellers-card{
-        width: calc(100% / 5 - 3rem);
+        width: calc(100% / 4 - 3rem);
         display: flex;
         flex-direction: column;
         margin: 1.5rem;
@@ -949,7 +953,47 @@ footer{
         text-align: center;
         margin: 0.5rem 0;
     }
+
 }
+
+.seller-page--holder{
+    padding: 6rem 12%;
+    background: $main-bg;
+    .sellers-banner--wrapper{
+        width: 100%;
+        height: 30rem;
+        position: relative;
+
+    }
+    .sellers-banner--image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        box-shadow: inset 100000px 0 10px rgba(0,0,0,0.5);
+    }
+    .banner-content{
+        width: max-content;
+        height: max-content;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        position: absolute;
+        color: #fff;
+        text-align: right;
+        h1{
+            font-family: "primary";
+            font-weight: 600;
+            font-size: 3.5rem;
+        }
+        p{
+            font-family: 'primary';
+            font-size: 1.5rem;
+        }
+    }
+
+}
+
 
 @media only screen and (max-width:1350px) {
     header{
@@ -1017,8 +1061,21 @@ footer{
 
     }
 
-    .sellers-card-container{
+    .seller-page--holder{
         padding: 6rem 5%;
+        background: $main-bg;
+        .banner-content{
+            h1{
+                font-family: "primary";
+                font-weight: 600;
+                font-size: 2.5rem;
+            }
+            p{
+                font-family: 'primary';
+                font-size: 1rem;
+            }
+        }
+    
     }
 
 }
@@ -1074,8 +1131,25 @@ footer{
 
     .sellers-card-container{
         .sellers-card{
-            width: calc(100% / 4 - 3rem);
+            width: calc(100% / 3 - 3rem);
         }
+    }
+
+    .seller-page--holder{
+        padding: 6rem 5%;
+        background: $main-bg;
+        .banner-content{
+            h1{
+                font-family: "primary";
+                font-weight: 600;
+                font-size: 2.5rem;
+            }
+            p{
+                font-family: 'primary';
+                font-size: 1rem;
+            }
+        }
+    
     }
 }
 @media only screen and (max-width:950px) {
@@ -1201,6 +1275,10 @@ footer{
         .modal-container{
             width: clamp(20rem,90%,60rem);
         }
+    }
+
+    .seller-page--holder{
+        padding: 4rem 5%;
     }
 }
 
@@ -1352,6 +1430,22 @@ footer{
         .sellers-card{
             width: calc(100% / 3 - 3rem);
         }
+    }
+
+    .seller-page--holder{
+        padding: 4rem 0;
+        .banner-content{
+            h1{
+                font-family: "primary";
+                font-weight: 600;
+                font-size: 2rem;
+            }
+            p{
+                font-family: 'primary';
+                font-size: 1rem;
+            }
+        }
+    
     }
 
 }
@@ -1651,7 +1745,7 @@ footer{
     }
 
     .sellers-card-container{
-        padding: 5rem 1rem;
+        padding: 0 1rem;
         .sellers-card{
             width: calc(100% / 2 - 3rem);
             margin: 0.5rem 1.5rem;
@@ -1678,6 +1772,25 @@ footer{
         .rating--star{
             font-size: 0.8rem;
         }
+    }
+
+    .seller-page--holder{
+        .sellers-banner--wrapper{
+            height:10rem;
+        }
+        .banner-content{
+            max-width: 15rem;
+            right: 2%;
+            left: auto;
+            h1{
+                font-size: 1.5rem;
+            }
+            p{
+                font-family: 'primary';
+                font-size: 0.9rem;
+            }
+        }
+    
     }
 }
 
@@ -1785,7 +1898,7 @@ footer{
     }
 
     .sellers-card-container{
-        padding: 5rem 1rem;
+        padding: 0 1rem;
         .sellers-card{
             width: calc(100% / 2 - 1rem);
             margin: 0.5rem;
