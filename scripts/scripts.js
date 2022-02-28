@@ -253,3 +253,14 @@ const closeFilter = () => {
         $(".filter-navigation").css({display: "none"})
     })
 }
+
+
+// Profile page
+
+//*Change Password slide
+const openPasswordChange = () =>{
+    $(".change-password--wrapper").slideDown(100,()=>{
+        $(".change-password--wrapper").css({display: "flex"})
+        $(".change-password--wrapper").animate({opacity:1},100)
+    });
+}
