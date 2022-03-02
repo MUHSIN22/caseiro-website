@@ -627,6 +627,9 @@ html {
                         p {
                             font-size: 0.7rem;
                         }
+                        span{
+                            font-size: 0.8rem;
+                        }
                     }
 
                     .billing-address-header {
@@ -675,6 +678,8 @@ html {
             .total-price-container {
                 margin: 0;
                 width: 90%;
+             
+                margin-bottom: 2rem;
             }
         }
     }
@@ -751,7 +756,6 @@ html {
 
             .total-price-container {
                 height: 33rem;
-                margin-bottom: 2rem;
                 .total-price-main {
                     h3 {
                         font-size: 1rem;

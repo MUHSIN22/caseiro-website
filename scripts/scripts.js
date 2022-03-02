@@ -264,3 +264,10 @@ const openPasswordChange = () =>{
         $(".change-password--wrapper").animate({opacity:1},100)
     });
 }
+
+//avatar selecting color change
+const avatarSelected = () =>{
+    $(".avatar-wrapper").click(function(){
+        $(this).toggleClass("clicked")
+    })
+}

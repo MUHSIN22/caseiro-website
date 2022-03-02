@@ -521,6 +521,9 @@ html {
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header p {
     font-size: 0.7rem;
   }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header span {
+    font-size: 0.8rem;
+  }
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header a {
     font-size: 0.8rem;
   }
@@ -546,6 +549,7 @@ html {
   .checkout--container .checkout-main .total-price-container {
     margin: 0;
     width: 90%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -586,7 +590,6 @@ html {
   }
   .checkout--container .checkout-main .total-price-container {
     height: 33rem;
-    margin-bottom: 2rem;
   }
   .checkout--container .checkout-main .total-price-container .total-price-main h3 {
     font-size: 1rem;
