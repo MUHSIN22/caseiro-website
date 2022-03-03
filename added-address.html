@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/added-address.css">
     <link rel="stylesheet" type="text/css" href="styles/manage-address.css">
     <link rel="stylesheet" type="text/css" href="styles/wishlist.style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -133,113 +134,41 @@
                     <div class="manage-address-details">
                         <h3 class="manage-address--title">Manage Address</h3>
                         <p >The following Address will be used on checkout page by default</p>
-              <div class="new-address-wrapper">
-                <h4 class="new-address">Add New Address</h4><span class="add-btn" onclick="addAddress()" >+</span>
-              </div>
                     </div>
                 </div>
             </div>
-            <div class="checkout-input-container">
-                <div class="checkout-input-main">
-                    <div class="billing-address-header">
-                        <h2>Billing Address</h2>
+			<div class="billing-address-card">
+                <div class="billing-address-content">
+                    <div class="billing-address-details">
+						<div class="title-wrapper">
+							<p class="billing-address-title">Billing Address</p>
+							<p class="option" onclick="optionActive()">:</p>
+						</div>
+						<div class="options-wrapper">
+							<div class="options-content">
+							<p class="edit">edit</p>
+							<p class="delete">delete</p>
+						</div>
+						</div>
+                        <p class="address">muhsin neyyathur</p>
+						<p class="address">	Dubai , Fujaira</p>
+						<p class="address">bd:105/1 , +971 80853830 </p>
                     </div>
-                    <div class="billing-address-input-content">
-                        <div class="billing-inputs">
-                            <form action="">
-                                <div class="biinputs-container">
-                                    <div class="binputs">
-                                        <label>First name</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="binputs">
-                                        <label>Last name</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="biinputs-container">
-                                    <div class="binputs">
-                                        <label>Emirates / State</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="binputs">
-                                        <label>City</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="biinputs-container">
-                                    <div class="binputs">
-                                        <label>Flat number</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="binputs">
-                                        <label>Building name</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="biinputs-container">
-                                    <div class="binputs">
-                                        <label>Pin</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="binputs">
-                                        <label>Phone number</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-    
-                                <div class="billing-checkbox">
-                                    <input class="checkbox" type="checkbox" value="">
-                                    <p>Will your shipping and billing address same ?</p>
-                                </div>
-                            </form>
-                            <h3 class="shipping-header">Shipping Address</h3>
-                            <form action="">
-                                <div class="biinputs-container">
-                                    <div class="binputs">
-                                        <label>First name</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="binputs">
-                                        <label>Last name</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="biinputs-container">
-                                    <div class="binputs">
-                                        <label>Emirates / State</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="binputs">
-                                        <label>City</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="biinputs-container">
-                                    <div class="binputs">
-                                        <label>Flat number</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="binputs">
-                                        <label>Building name</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="biinputs-container">
-                                    <div class="binputs">
-                                        <label>Pin</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="binputs">
-                                        <label>Phone number</label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                            </form>
-                            <button class="btn-save">
-                                Save Address
-                            </button>
-                        </div>
+                </div>
+            </div>
+			<div class="billing-address-card">
+			
+                <div class="billing-address-content">
+					
+                    <div class="billing-address-details">
+						<div class="title-wrapper">
+							<p class="billing-address-title">Shipping Address</p>
+							<p>:</p>
+						</div>
+					
+                        <p class="address">muhsin neyyathur</p>
+						<p class="address">	Dubai , Fujaira</p>
+						<p class="address">bd:105/1 , +971 80853830 </p>
                     </div>
                 </div>
             </div>

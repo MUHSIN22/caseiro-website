@@ -1,0 +1,150 @@
+.products-page-wrapper {
+      grid-template-areas: "cover cover" "filter products" "footer footer";
+  -ms-grid-columns: 16rem auto;
+      grid-template-columns: 16rem auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  padding: 0 10%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.products-page-wrapper .landing-cover {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: cover;
+  margin-top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  height: 35rem;
+  padding-top: 1rem;
+  border-radius: 10px;
+}
+
+.products-page-wrapper .landing-cover .main-cover .banner {
+  border-radius: 10px;
+  height: 26rem;
+  width: 65rem;
+}
+
+.products-page-wrapper .landing-cover .main-cover .cover-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 59rem;
+}
+
+.products-page-wrapper .landing-cover .main-cover .cover-bottom .dp {
+  width: 10rem;
+  margin-left: 1rem;
+  height: 10rem;
+  margin-top: -3rem;
+  border-radius: 10px;
+}
+
+.products-page-wrapper .landing-cover .main-cover .cover-bottom .bottom-content {
+  padding: 0.7rem;
+}
+
+.products-page-wrapper .landing-cover .main-cover .cover-bottom .bottom-content strong {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.products-page-wrapper .landing-cover .main-cover .cover-bottom .bottom-content p {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  width: 70%;
+}
+
+.products-page-wrapper .filter-container {
+  background: #fff;
+  margin-top: 1rem;
+  border-radius: 10px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: filter;
+  height: 41rem;
+}
+
+.products-page-wrapper .filter-container .filter-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF5D50), to(#DE388D));
+  background: linear-gradient(180deg, #FF5D50 0%, #DE388D 100%);
+  height: 3rem;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 800;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.products-page-wrapper .filter-container .last-wrapper {
+  border: none;
+}
+
+.products-page-wrapper .product-listing {
+  margin-top: 1rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: products;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 2rem;
+  padding-right: 0;
+}
+
+.products-page-wrapper .product-listing .product-card {
+  width: 11rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.products-page-wrapper .product-listing .product-card .card-content .item {
+  width: 11rem;
+  height: 13rem;
+  border: 1px solid #00000026;
+  border-radius: 10px;
+}
+
+.products-page-wrapper .product-listing .product-card .card-content p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.products-page-wrapper .product-listing .product-card .card-content .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-page-wrapper .product-listing .product-card .card-content .button-container .cost {
+  font-weight: 600;
+  color: #000000b3;
+}
+
+.products-page-wrapper .product-listing .product-card .card-content .button-container button {
+  background: linear-gradient(93.46deg, #DE388D 0%, #FF5D50 100%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  width: 5rem;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=landing.css.map */

@@ -1,34 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/add-to-cart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <title>Caseiro cart</title>
 </head>
+
 <body>
+    <header>
+        <div class="ad">
+
+        </div>
+        <div class="head">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul id="category-list">
+                <li>
+                    <a class="category category--active" href="#">Art</a>
+                </li>
+                <li>
+                    <a class="category" href="#">Food</a>
+                </li>
+                <li>
+                    <a class="category" href="#">Fashion</a>
+                </li>
+                <li>
+                    <a class="category" href="#">Gift</a>
+                </li>
+                <li>
+                    <a class="category" href="#">Beauty</a>
+                </li>
+            </ul>
+            <img src="assets/logo.png" class="logo" alt="">
+            <ul id="core-list">
+                <li>
+                    <a class="category core-rm" href="#">About</a>
+                </li>
+                <li>
+                    <a class="category core-rm" href="#">Support</a>
+                </li>
+                <li class="category search-icon-wrapper" onclick="openSearch()">
+                    <i class="material-icons search-icon--link">search</i>
+                </li>
+                <li class="category">
+                    <i class="material-icons">person_outline</i>
+                </li>
+                <li class="category">
+                    <i class="material-icons-outlined">shopping_bag</i>
+                </li>
+            </ul>
+        </div>
+        <form class="search-container">
+            <div class="search-wrapper">
+                <i class="material-icons search-icon">search</i>
+                <input type="search" name="search" placeholder="Search here..." id="search-input" class="search-input">
+                <button type="submit" class="btn-search">Search</button>
+                <i class="material-icons-outlined close-icon" onclick="closeSearch()">close</i>
+            </div>
+        </form>
+
+        <ul class="mobile-menu">
+            <li>
+                <a class="menu--item" href="#">Art</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Food</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Fashion</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Gift</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Beauty</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">About</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Support</a>
+            </li>
+        </ul>
+    </header>
     <div class="cart--container">
+        <div class="cart-main">
+
+     
         <div class="cart-items--wrapper">
             <div class="cart--header">
-                <h2 class="cart--heading">My Cart( 5 )</h2>
+                <h2 class="cart--heading">My Cart ( 5 )</h2>
             </div>
+            <div class="cart-item-wrapper">
+                <div class="cart-content">
+                    <img class="item-image" src="/assets/images/ck.jpg" alt="" />
+                    <div class="item-contents">
+                        <div class="item-name">
+                            <h3>Wajah Ceramic Vase</h3>
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox">
+                            </div>
+                        
+                        </div>
 
-            <div class="cart-item--card">
-                <img src="/assets/images/ck.jpg" alt="" class="card-item--image">
-                <h2 class="cart-item--title">Wajah Ceramic Vase</h2>
-                <strong class="cart-item--price">AED 500.00</strong>
-                <strong class="stock--status">In Stock</strong>
-                <div class="quantity-wrapper">
-                    <label class="quantity--label">QTY:</label>
-                    <button class="btn-qty qty--decreament">-</button>
-                    <strong class="btn-qty qty">2</strong>
-                    btn.qty--increament
+                        <p class="price-item">AED 500.00</p>
+                        <strong class="stock">In Stock</strong>
+                        <div class="quantity-wrapper">
+                            <strong>Qty:</strong>
+                            -<p>2</p>+
+                        </div>
+                        <div class="delete-total-wrapper">
+                            <a href="#" class="delete-item">Delete</a>
+                            <small>Total : <span>AED 1000.00</span></small>
                 </div>
-                <button class="btn-delete">Delete</button>
-                <input type="checkbox" name="cart-item-selector" class="cart-item--selector" class="cart-item--selector">
-                <strong class="cart-item--total"><span>Total:</span>AED 1000.00</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item-wrapper">
+                <div class="cart-content">
+                    <img class="item-image" src="/assets/images/ck.jpg" alt="" />
+                    <div class="item-contents">
+                        <div class="item-name">
+                            <h3>Wajah Ceramic Vase</h3>
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox">
+                            </div>
+                        
+                        </div>
+
+                        <p class="price-item">AED 500.00</p>
+                        <strong class="stock">In Stock</strong>
+                        <div class="quantity-wrapper">
+                            <strong>Qty:</strong>
+                            -<p>2</p>+
+                        </div>
+                        <div class="delete-total-wrapper">
+                            <a href="#" class="delete-item">Delete</a>
+                            <small>Total : <span>AED 1000.00</span></small>
+                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item-wrapper">
+                <div class="cart-content">
+                    <img class="item-image" src="/assets/images/ck.jpg" alt="" />
+                    <div class="item-contents">
+                        <div class="item-name">
+                            <h3>Wajah Ceramic Vase</h3>
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox">
+                            </div>
+                        
+                        </div>
+
+                        <p class="price-item">AED 500.00</p>
+                        <strong class="stock">In Stock</strong>
+                        <div class="quantity-wrapper">
+                            <strong>Qty:</strong>
+                            -<p>2</p>+
+                        </div>
+                        <div class="delete-total-wrapper">
+                            <a href="#" class="delete-item">Delete</a>
+                            <small>Total : <span>AED 1000.00</span></small>
+                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item-wrapper">
+                <div class="cart-content">
+                    <img class="item-image" src="/assets/images/ck.jpg" alt="" />
+                    <div class="item-contents">
+                        <div class="item-name">
+                            <h3>Wajah Ceramic Vase</h3>
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox">
+                            </div>
+                        
+                        </div>
+
+                        <p class="price-item">AED 500.00</p>
+                        <strong class="stock">In Stock</strong>
+                        <div class="quantity-wrapper">
+                            <strong>Qty:</strong>
+                            -<p>2</p>+
+                        </div>
+                        <div class="delete-total-wrapper">
+                            <a href="#" class="delete-item">Delete</a>
+                            <small>Total : <span>AED 1000.00</span></small>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="total-price-container">
+            <div class="total-price-main">
+                <h3>Total Price</h3>
+                <div class="total-price-content">
+                    <div class="total-inputs">
+                        <p class="total-inputs-key">SubTotal</p>
+                        <p class="total-inputs-value">AED 3000.00</p>
+                    </div>
+                    <div class="total-inputs">
+                        <p class="total-inputs-key">Shipping</p>
+                        <p class="total-inputs-reminder">add your address</p>
+                    </div>
+                    <div class="total-inputs">
+                        <p class="total-inputs-key">Discount</p>
+                        <p class="total-inputs-value">- AED 5.00</p>
+                    </div>
+                    <p class="coupon">COUPON</p>
+                    <small>Enter your coupon code if you have one</small>
+                    <div class="coupon-code-container">
+                        <input type="text" class="coupon-code" name="coupon" placeholder="Coupon Code" value="">
+                        <div class="arrow">
+                            <span class="material-icons-outlined">
+                                trending_flat
+                            </span>
+                        </div>
+                    </div>
+                    <div class="total-inputs">
+                        <p class="total-inputs-key">Coupon Discount</p>
+                        <p class="total-inputs-value">- AED 50.00</p>
+                    </div>
+                    <div class="total-inputs">
+                        <p class="total-inputs-key">Tax</p>
+                        <p class="total-inputs-value">AED 65.00</p>
+                    </div>
+                    <div class="border"></div>
+                    <div class="total-inputs">
+                        <p class="total-inputs-total-key">TOTAL</p>
+                        <p class="total-inputs-total-value">AED 6500.00</p>
+                    </div>
+                    <div class="button">
+                        <button onClick="">PLACE ORDER</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="scripts/scripts.js"></script>
 </html>

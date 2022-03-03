@@ -8,7 +8,12 @@
   height: 10rem;
 }
 
+.manage-address-wrapper .card-active {
+  height: 7rem;
+}
+
 .manage-address-wrapper .manage-address-card {
+  padding-top: 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,6 +21,10 @@
   margin-bottom: 1rem;
   border-radius: 10px;
   padding: 1.8rem;
+}
+
+.manage-address-wrapper .manage-address-card .manage-address-content {
+  width: 100%;
 }
 
 .manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details {
@@ -33,7 +42,46 @@
   font-size: 0.9rem;
 }
 
+.manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details .none-new-address {
+  display: none !important;
+}
+
+.manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details .new-address-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details .new-address-wrapper span {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #0038A5;
+}
+
+.manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details .new-address-wrapper .new-address {
+  color: #0038A5;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.active-fields {
+  display: block !important;
+}
+
 .checkout-input-container {
+  display: none;
   background-color: #fff;
   margin: 1rem 0 2rem 0;
   width: 100%;
@@ -209,6 +257,9 @@
     padding-bottom: 0;
     border-radius: 0;
     margin-bottom: 0;
+  }
+  .manage-address-wrapper .manage-address-content .manage-address-details .new-address-wrapper {
+    margin-bottom: 2rem;
   }
   .checkout-input-container {
     width: 100%;

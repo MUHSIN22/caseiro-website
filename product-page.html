@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/product-page.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/add-to-cart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <title>Caseiro orders</title>
+</head>
+
+<body>
+    <header>
+        <div class="ad">
+
+        </div>
+        <div class="head">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul id="category-list">
+                <li>
+                    <a class="category category--active" href="#">Art</a>
+                </li>
+                <li>
+                    <a class="category" href="#">Food</a>
+                </li>
+                <li>
+                    <a class="category" href="#">Fashion</a>
+                </li>
+                <li>
+                    <a class="category" href="#">Gift</a>
+                </li>
+                <li>
+                    <a class="category" href="#">Beauty</a>
+                </li>
+            </ul>
+            <img src="assets/logo.png" class="logo" alt="">
+            <ul id="core-list">
+                <li>
+                    <a class="category core-rm" href="#">About</a>
+                </li>
+                <li>
+                    <a class="category core-rm" href="#">Support</a>
+                </li>
+                <li class="category search-icon-wrapper" onclick="openSearch()">
+                    <i class="material-icons search-icon--link">search</i>
+                </li>
+                <li class="category">
+                    <i class="material-icons">person_outline</i>
+                </li>
+                <li class="category">
+                    <i class="material-icons-outlined">shopping_bag</i>
+                </li>
+            </ul>
+        </div>
+        <form class="search-container">
+            <div class="search-wrapper">
+                <i class="material-icons search-icon">search</i>
+                <input type="search" name="search" placeholder="Search here..." id="search-input" class="search-input">
+                <button type="submit" class="btn-search">Search</button>
+                <i class="material-icons-outlined close-icon" onclick="closeSearch()">close</i>
+            </div>
+        </form>
+
+        <ul class="mobile-menu">
+            <li>
+                <a class="menu--item" href="#">Art</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Food</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Fashion</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Gift</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Beauty</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">About</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Support</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="product-display-container">
+        <div class="product-display-wrapper">
+
+                        <!-- product image displaying container -->
+            <div class="display-container">
+                <div class="display-content">
+                    <img src="/assets//images/shoe.png" alt="">
+                    <div class="display-slider">
+                        <img src="/assets//images/shoe.png" alt="">
+                        <img src="/assets//images/shoe.png" alt="">
+                        <img src="/assets//images/shoe.png" alt="">
+                        <img src="/assets//images/shoe.png" alt="">
+                        <img src="/assets//images/shoe.png" alt="">
+                    </div>
+                    <div class="display-button-container">
+                        <button class="cart">Add to Cart</button>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+                <!-- product description container -->
+                
+                <div class="product-description-container">
+                    <div class="product-description">
+                        <h3>Sneakers For Men </h3>
+                        <p>star</p>
+                        <small class="provide">Provided by <span>Namshi</span> </small>
+                        <div class="product-price">
+                            <strong class="price">AED 429</strong>
+                            <p class="discount">AED 603</p>
+                        </div>
+                        <select class="size" id="">
+                            <option value="">Size name</option>
+                        </select>
+                        <div class="product-quantity">
+                            <strong>Qty:</strong>
+                            -<p>1</p>+
+                        </div>
+                        <div class="about-product">
+                            <h3>About this item</h3>
+                            <ul>
+                                <li> This Matte Finish screen protector can full cover theer the whole screen, edge to edge, will provide the best full protection for your Phone whole screen, edge to edge, will provide the best </li>
+                                <li>About this item This Matte Finish screen protector can full cover the whole screen, edge to edge, will provide er the whole screen, edge to edge, will provide the best the best full protection</li>
+                                <li>About this item This Matte Finish screen protector can full cover the whole screen, edge to edge, will provide the best full protection er the whole screen, edge to edge, will provide the best </li>
+                                <li>About this item This Matte Finish screen protector can full cover the whole screen, edge to edge, will provide the best full protection er the whole screen, edge to edge, will provide the best </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Ended the descrptn container -->
+        </div>
+    </div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script src="scripts/scripts.js"></script>
+
+</html>

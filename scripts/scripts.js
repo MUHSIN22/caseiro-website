@@ -271,3 +271,20 @@ const avatarSelected = () =>{
         $(this).toggleClass("clicked")
     })
 }
+
+//manage address input field appears
+
+const addAddress=() =>{
+    $(".add-btn").click(function(){
+        $(".new-address-wrapper").addClass("none-new-address")
+        $(".checkout-input-container").addClass("active-fields")
+        $(".manage-address-card").addClass("card-active")
+    })
+}
+
+//option active
+const optionActive=() =>{
+    $(".option").click(function() {
+        $(".options-wrapper").addClass("options-wrapper-active")
+    })
+} 
