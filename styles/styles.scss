@@ -449,11 +449,28 @@ header{
     }
     .product--card{
         width: calc(100% / 12 - 2rem);
+        .add-to-cart{
+            display: flex;
+            justify-content:space-between;
+            button{
+                background: linear-gradient(93.46deg, #DE388D 0%, #FF5D50 100%);
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                font-weight: 600;
+                width: 5rem;
+                font-size: 0.8rem;
+            }
+          
+        }
     }
     .card--image-wrapper{
         width: 100%;
         height: calc(100vw / 4);
         position: relative;
+        .product--image{
+border-radius: 10px;
+        }
     }
     .card-btn-view--wrapper{
         width: 100%;
@@ -1056,7 +1073,7 @@ footer{
         }
 
         .card--image-wrapper{
-            height: calc( 100vw / 4)
+            height: calc( 100vw / 4);
         }
 
     }
@@ -1314,7 +1331,6 @@ footer{
             font-size: 1.2rem;
         }
     }
-
     .product-section{
         .products--slider{
             flex-wrap: wrap;
@@ -1375,7 +1391,9 @@ footer{
         z-index: 1000;
         display: block;
     }
-
+    .product-section .card-btn-view--wrapper{
+            pointer-events: none
+    }
     .products-listing{
         .product--card{
             width: calc(100%/3 - 2rem);

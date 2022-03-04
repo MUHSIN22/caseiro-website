@@ -285,6 +285,12 @@ const addAddress=() =>{
 //option active
 const optionActive=() =>{
     $(".option").click(function() {
-        $(".options-wrapper").addClass("options-wrapper-active")
+        $(".options-wrapper").toggleClass("options-wrapper-active")
+    })
+} 
+
+const optionActive2=() =>{
+    $(".options").click(function() {
+        $(".options-wrappers").toggleClass("options-wrapper-actives")
     })
 } 

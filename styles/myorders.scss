@@ -1,3 +1,4 @@
+
 .filter-container {
     margin-top: 8rem;
     background: #fff;
@@ -29,7 +30,9 @@
     }
 }
 
+
 .cart--container{
+
     .cart-main{
 .cart-items--wrapper {
     .cart--header {
@@ -85,6 +88,29 @@
             .filter-container{
                 margin-top: 8rem;
                 margin-right: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .cart--container{
+        .cart-main{
+            .btn-filter{
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                padding: 1rem;
+                font-size: 3rem;
+                background: $gradient-primary;
+                border-radius: 50%;
+                border: none;
+                color: #fff;
+                z-index: 1000;
+                display: block;
+            }
+            .filter-container{
+                display: none;
             }
         }
     }
