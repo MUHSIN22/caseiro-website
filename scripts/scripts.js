@@ -294,3 +294,17 @@ const optionActive2=() =>{
         $(".options-wrappers").toggleClass("options-wrapper-actives")
     })
 } 
+
+
+//wish list heart
+const romanticmode=() =>{
+    $(".material-icons-outlined").click(function() {
+        $(".wishlist").toggleClass("heart")
+    })
+}
+
+const productromantic=() =>{
+    $(".material-icons").click(function() {
+        $(this).toggleClass("heart")
+    })
+}

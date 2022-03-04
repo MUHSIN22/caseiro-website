@@ -16,6 +16,24 @@
             height: 37.5rem;
 
             .display-content {
+                position: relative;
+                .heart{
+                    color:#af2d2d;
+                }
+                span{
+                    -webkit-touch-callout: none; /* iOS Safari */
+                    -webkit-user-select: none; /* Safari */
+                     -khtml-user-select: none; /* Konqueror HTML */
+                       -moz-user-select: none; /* Old versions of Firefox */
+                        -ms-user-select: none; /* Internet Explorer/Edge */
+                            user-select: none;
+                    cursor: pointer;
+                    position: absolute;
+                    right: 18px;
+                    top: 11px;
+                    font-size: 3rem;
+                    color: #fff;
+                }
                 img {
                     width: 100%;
                 }
@@ -41,6 +59,7 @@
                         outline: none;
                         border: none;
                         color: #fff;
+                        font-weight: 800;
                         width: 10rem;
                         height: 3rem;
                         border-radius: 10px;
