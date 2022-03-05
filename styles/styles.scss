@@ -449,6 +449,13 @@ header{
     }
     .product--card{
         width: calc(100% / 12 - 2rem);
+        .product-card--title{
+            display: inline-block;
+width: 180px;
+white-space: nowrap;
+overflow: hidden !important;
+text-overflow: ellipsis;
+        }
         .add-to-cart{
             display: flex;
             justify-content:space-between;
@@ -1274,11 +1281,18 @@ footer{
             margin:2rem;
         }
     }
-
+    .product-section .product--card .add-to-cart button{
+        height: 2rem;
+        width: 5rem;
+    }
+    .product-section .product--card{
+        overflow:hidden;
+    }
     .product-section,
     .products-listing{
         .product-card--title{
             font-size: 1rem;
+            
 
         }
         .product--price{

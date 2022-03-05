@@ -62,7 +62,7 @@
                     .rating-container {
                         display: flex;
                         align-items: center;
-                        color:#FF5D50;
+                        color: #FF5D50;
 
                     }
                 }
@@ -86,8 +86,8 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             display: flex;
-            justify-content:space-between;
-            align-items:center;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .last-wrapper {
@@ -113,22 +113,30 @@
                 width: 100%;
                 height: calc(100vw / 7);
                 position: relative;
-                .heart{
-                    color:#af2d2d;
+
+                .heart {
+                    color: #af2d2d;
                 }
-                span{
-                    -webkit-touch-callout: none; /* iOS Safari */
-                    -webkit-user-select: none; /* Safari */
-                     -khtml-user-select: none; /* Konqueror HTML */
-                       -moz-user-select: none; /* Old versions of Firefox */
-                        -ms-user-select: none; /* Internet Explorer/Edge */
-                            user-select: none;
+
+                span {
+                    -webkit-touch-callout: none;
+                    /* iOS Safari */
+                    -webkit-user-select: none;
+                    /* Safari */
+                    -khtml-user-select: none;
+                    /* Konqueror HTML */
+                    -moz-user-select: none;
+                    /* Old versions of Firefox */
+                    -ms-user-select: none;
+                    /* Internet Explorer/Edge */
+                    user-select: none;
                     cursor: pointer;
                     position: absolute;
                     right: 18px;
                     top: 11px;
                     color: #fff;
                 }
+
                 .item {
                     border: 1px solid #00000026;
                     border-radius: 10px;
@@ -142,6 +150,12 @@
                     font-size: 0.9rem;
                     font-weight: 600;
                     margin-bottom: 0.5rem;
+                    margin-top: 1rem;
+                    display: inline-block;
+                    width: 180px;
+                    white-space: nowrap;
+                    overflow: hidden !important;
+                    text-overflow: ellipsis;
                 }
 
                 .button-container {
@@ -285,11 +299,12 @@
                         strong {
                             font-size: 1rem;
                         }
-                        .rating-container{
-                            span{
+
+                        .rating-container {
+                            span {
                                 font-size: 1.2rem;
                             }
-                
+
                         }
                     }
                 }
@@ -331,7 +346,7 @@
                         p {
                             margin-top: 0.2rem;
                         }
-                       
+
                     }
                 }
             }

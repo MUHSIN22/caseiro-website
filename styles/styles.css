@@ -570,6 +570,14 @@ header .mobile-menu__active {
   width: calc(100% / 12 - 2rem);
 }
 
+.product-section .product--card .product-card--title {
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
 .product-section .product--card .add-to-cart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1520,6 +1528,13 @@ footer .footer--link {
   }
   .sellers .sellers--card {
     margin: 2rem;
+  }
+  .product-section .product--card .add-to-cart button {
+    height: 2rem;
+    width: 5rem;
+  }
+  .product-section .product--card {
+    overflow: hidden;
   }
   .product-section .product-card--title,
   .products-listing .product-card--title {
