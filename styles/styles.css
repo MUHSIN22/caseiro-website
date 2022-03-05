@@ -537,6 +537,15 @@ header .mobile-menu__active {
   position: relative;
 }
 
+.product-section .wishlist-outlined {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 .product-section .product--title {
   font-size: 3rem;
   font-weight: 500;
@@ -568,14 +577,13 @@ header .mobile-menu__active {
 
 .product-section .product--card {
   width: calc(100% / 12 - 2rem);
-}
-
-.product-section .product--card .product-card--title {
-  display: inline-block;
-  width: 180px;
-  white-space: nowrap;
-  overflow: hidden !important;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .product-section .product--card .add-to-cart {
@@ -585,9 +593,11 @@ header .mobile-menu__active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: auto;
 }
 
 .product-section .product--card .add-to-cart button {
+  cursor: pointer;
   background: linear-gradient(93.46deg, #DE388D 0%, #FF5D50 100%);
   border: none;
   border-radius: 5px;
@@ -601,6 +611,7 @@ header .mobile-menu__active {
   width: 100%;
   height: calc(100vw / 4);
   position: relative;
+  border-radius: 10px;
 }
 
 .product-section .card--image-wrapper .product--image {
@@ -626,6 +637,7 @@ header .mobile-menu__active {
   opacity: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border-radius: 10px;
 }
 
 .product-section .card-btn-view--wrapper:hover {
@@ -1529,16 +1541,26 @@ footer .footer--link {
   .sellers .sellers--card {
     margin: 2rem;
   }
+  .product--price {
+    margin: 0.5rem 0;
+  }
+  .product-section .product--card .add-to-cart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .product-section .product--card .add-to-cart button {
     height: 2rem;
     width: 5rem;
+    width: 100%;
   }
   .product-section .product--card {
     overflow: hidden;
   }
   .product-section .product-card--title,
   .products-listing .product-card--title {
-    font-size: 1rem;
+    font-size: 14px;
   }
   .product-section .product--price,
   .products-listing .product--price {
@@ -1596,6 +1618,7 @@ footer .footer--link {
     transition: all 0.3s ease;
   }
   .product-section .product--card {
+    margin: 1rem 0;
     width: calc(100% / 6 - 2rem);
   }
   .product-section .card--image-wrapper {

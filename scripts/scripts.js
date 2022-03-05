@@ -9,6 +9,7 @@ $(document).ready(() => {
     bannerDotClickSlider();
     productDotClickSlider();
     bannerDragSlider();
+    addToWishlist();
     if($(window).innerWidth() <= 768){
         productTouchSlider()
     }
@@ -272,6 +273,13 @@ const avatarSelected = () =>{
     })
 }
 
+const addToWishlist=() =>{
+    $(".wishlist-outlined").click(event => {
+        console.log(event.target.innerHTML);
+        event.target.innerHTML = "favorite"
+        event.target.styles()
+    })
+}
 //manage address input field appears
 
 const addAddress=() =>{
@@ -308,3 +316,4 @@ const productromantic=() =>{
         $(this).toggleClass("heart")
     })
 }
+
