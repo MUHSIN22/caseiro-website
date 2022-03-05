@@ -30,10 +30,14 @@
     }
 }
 
+.btn-filter{
+    display: none!important;
+}
 
 .cart--container{
 
     .cart-main{
+        .filter-container{}
 .cart-items--wrapper {
     .cart--header {
         display: flex;
