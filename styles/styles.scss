@@ -839,6 +839,30 @@ footer{
         display: flex;
         flex-wrap: wrap;
     }
+    .wishlist-outlined{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .add-to-cart{
+        display: flex;
+        justify-content:space-between;
+        margin-top: auto;
+        button{
+            cursor: pointer;
+            background: linear-gradient(93.46deg, #DE388D 0%, #FF5D50 100%);
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            width: 5rem;
+            font-size: 0.8rem;
+        }
+      
+    }
     .product--card{
         width: calc(100% / 5 - 2rem);
         margin: 1rem;
@@ -1429,8 +1453,18 @@ footer{
         .product--card{
             width: calc(100%/3 - 2rem);
         }
+        .add-to-cart{
+            flex-direction: column;
+            button{
+                width: 100%;
+                padding: 0.5rem 0;
+            }
+        }
+        .card-btn-view--wrapper{
+            display: none;
+       }
         .card--image-wrapper{
-            height: calc(100vw / 3)
+            height: calc(100vw / 3);
         }
         .product--price{
             font-size: 0.8rem;
