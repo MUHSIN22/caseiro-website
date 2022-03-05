@@ -301,6 +301,9 @@
   .product-display-container .product-display-wrapper .display-container .display-content .slider-container .display-button-container button {
     width: 35%;
   }
+  .product-display-container .product-display-wrapper .display-container .display-content span {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 472px) {
@@ -331,6 +334,9 @@
   }
   .product-display-container .product-display-wrapper .display-container .display-content .slider-container .display-button-container button {
     width: 8rem;
+  }
+  .product-display-container .product-display-wrapper .display-container .display-content span {
+    font-size: 1.5rem;
   }
 }
 

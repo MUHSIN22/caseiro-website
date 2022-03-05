@@ -354,6 +354,9 @@ object-position: center;
        }
    }
 }
+.product-display-container .product-display-wrapper .display-container .display-content span{
+    font-size:2rem;
+}
 }
 
 @media only screen and (max-width:472px){
@@ -421,6 +424,9 @@ font-size: 0.8rem;
         }
     }
  }
+ .product-display-container .product-display-wrapper .display-container .display-content span{
+    font-size:1.5rem;
+}
 }
 
 @media only screen and (max-width:340px) {
