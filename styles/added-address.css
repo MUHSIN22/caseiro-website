@@ -11,12 +11,15 @@
   margin-bottom: 1.5rem !important;
 }
 
+.manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details {
+  margin-left: 0 !important;
+}
+
 .manage-address-wrapper .billing-address-card {
   background: #fff;
   border-radius: 10px;
   padding: 1.8rem;
   margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
 }
 
 .manage-address-wrapper .billing-address-card .billing-address-content {
@@ -24,7 +27,6 @@
 }
 
 .manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details {
-  margin-left: 2rem;
   position: relative;
 }
 
@@ -66,9 +68,7 @@
   cursor: pointer;
   display: none;
   position: absolute;
-  right: -2rem;
-  position: absolute;
-  right: -2rem;
+  right: -1rem;
 }
 
 .manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrappers .options-content {
@@ -116,7 +116,7 @@
   cursor: pointer;
   display: none;
   position: absolute;
-  right: -2rem;
+  right: -1rem;
 }
 
 .manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper .options-content {
@@ -179,23 +179,19 @@
   }
   .manage-address-wrapper .manage-address-card {
     margin-bottom: 0 !important;
+    padding: 1rem !important;
   }
   .manage-address-wrapper .billing-address-card {
     border-radius: 0;
     margin-bottom: 0;
     padding-bottom: 1.5rem;
+    padding: 1rem;
   }
-  .manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details {
-    margin-left: 1.5rem;
+  .manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper-active {
+    right: 0;
   }
-}
-
-@media only screen and (max-width: 350px) {
-  .manage-address-wrapper .billing-address-card {
-    padding-left: 1.3rem;
-  }
-  .manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details {
-    margin-left: 0;
+  .manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper-actives {
+    right: 0 !important;
   }
 }
 /*# sourceMappingURL=added-address.css.map */

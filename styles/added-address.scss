@@ -8,6 +8,11 @@
 .manage-address-wrapper {
     .manage-address-card {
         margin-bottom: 1.5rem !important;
+        .manage-address-content{
+            .manage-address-details{
+                margin-left: 0!important;
+            }
+        }
     }
 
     .billing-address-card {
@@ -15,13 +20,11 @@
         border-radius: 10px;
         padding: 1.8rem;
         margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
 
         .billing-address-content {
             width: 100%;
 
             .billing-address-details {
-                margin-left: 2rem;
                 position: relative;
 
                 .title-wrapper {
@@ -51,9 +54,8 @@
                     cursor: pointer;
                     display: none;
                     position: absolute;
-                    right: -2rem;
-                    position: absolute;
-                    right: -2rem;
+                    right: -1rem;
+             
                     
                     .options-content {
                         width: 6rem;
@@ -84,7 +86,7 @@
                     cursor: pointer;
                     display: none;
                     position: absolute;
-                    right: -2rem;
+                    right: -1rem;
                     
                     .options-content {
                         width: 6rem;
@@ -133,28 +135,23 @@
     .manage-address-wrapper{
         .manage-address-card{
             margin-bottom: 0!important;
+            padding: 1rem!important;
         }
         .billing-address-card{
             border-radius:0;
             margin-bottom: 0;
             padding-bottom: 1.5rem;
+            padding: 1rem;
             .billing-address-content{
                 .billing-address-details{
-                    margin-left: 1.5rem;
+                    .options-wrapper-active{
+                        right: 0;
+                    }
+                    .options-wrapper-actives{
+                        right: 0!important;
+                    }
                 }
             }
         }
     }
-}
-@media only screen and (max-width:350px) {
-    .manage-address-wrapper{
-    .billing-address-card{
-        padding-left: 1.3rem;
-        .billing-address-content{
-            .billing-address-details{
-                margin-left: 0;
-            }
-        }
-    }
-}
 }

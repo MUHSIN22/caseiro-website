@@ -1,6 +1,7 @@
 .dashboard--container {
   -ms-grid-rows: 0.5fr 1fr;
       grid-template-rows: 0.5fr 1fr;
+  border: none !important;
 }
 
 .dashboard--container .manage-address-wrapper {
