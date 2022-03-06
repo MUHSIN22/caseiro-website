@@ -31,21 +31,21 @@ html {
     background-color: $main-bg;
     display: flex;
     justify-content: center;
+    padding: 0 12%;
 
     .checkout-main {
         margin-top: 6rem;
         display: flex;
-        width: 90%;
+        width: 100%;
         justify-content: space-evenly;
 
         .checkout-input-container {
             background-color: #fff;
             margin: 1rem 0 2rem 0;
-            width: 63%;
+            width: 65%;
 
             .checkout-input-main {
-                margin-left: 3rem;
-                padding: 2rem 1rem 0 1rem;
+                padding: 2rem;
             }
 
             .checkout-header {
@@ -57,6 +57,7 @@ html {
                     padding-right: 0.5rem;
                     color: #00000099;
                     font-weight: 600;
+                    font-size: 0.9rem;
                 }
 
                 .checkout {
@@ -66,8 +67,10 @@ html {
                 span {
                     padding-right: 0.5rem;
                     color: #00000099;
+                    margin-top: 1px;
+                    font-size: 1rem;
                     font-weight: 100;
-                    margin-top: -2px;
+
                 }
             }
 
@@ -109,14 +112,14 @@ html {
 
             .billing-address-input-content {
                 .billing-inputs {
-                    width: 90%;
+                    // width: 100%;
 
                     .biinputs-container {
                         display: flex;
-                        justify-content: space-between;
                         margin-bottom: 1rem;
 
                         .binputs {
+                            width: 100%;
                             display: flex;
                             flex-direction: column;
 
@@ -128,8 +131,8 @@ html {
                             }
 
                             input {
-                                height: 1.8rem;
-                                width: 13rem;
+                                padding: 0.5rem;
+                                width: 95%;
                                 outline: none;
                                 padding-left: 0.5rem;
                                 border-radius: 3px;
@@ -191,7 +194,8 @@ html {
             border-radius: 10px;
 
             .total-price-main {
-                padding: 1rem 0 1rem 1.5rem;
+                padding: 1rem;
+                width: 100%;
 
                 h3 {
                     font-weight: 700;
@@ -199,6 +203,7 @@ html {
                     padding-bottom: 1rem;
                     border-bottom: 0.1px solid #00000033;
                     width: 90%;
+
                     margin-bottom: 1rem;
                 }
 
@@ -212,7 +217,6 @@ html {
                     .total-inputs {
                         display: flex;
                         justify-content: space-between;
-                        padding-right: 2.2rem;
                         margin: 2rem 0 2rem 0;
 
                         .total-inputs-value {
@@ -254,20 +258,29 @@ html {
                     }
 
                     .coupon-code-container {
+                        position: relative;
                         display: flex;
                         align-items: center;
                         border: 1px solid #00000080;
                         height: 2rem;
                         margin: 0.5rem 0 0 0;
-                        width: 90%;
+                        width: 100%;
                         border-radius: 5px;
                         margin-top: 1rem;
 
+                        .arrow {
+                            position: absolute;
+
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+
                         .coupon-code {
-                            padding-left: 1rem;
+                            padding: 0 0.5rem 0 0.5rem;
                             border: none;
                             outline: none;
-                            width: 90%;
+                            width: 100%;
 
                         }
 
@@ -291,7 +304,6 @@ html {
                     .button {
                         display: flex;
                         justify-content: flex-end;
-                        padding: 0 2rem 1rem 0;
 
                         button {
                             background: #FF5D50;
@@ -310,6 +322,12 @@ html {
     }
 }
 
+@media only screen and (max-width:1370px) {
+    .checkout--container {
+        padding: 0 5%;
+    }
+}
+
 @media only screen and (max-width:1020px) {
     .checkout--container {
 
@@ -317,7 +335,7 @@ html {
             .checkout-input-container {
                 .checkout-header {
                     p {
-                        font-size: 0.9rem;
+                        font-size: 0.8rem;
                     }
 
                     span {
@@ -347,18 +365,6 @@ html {
                         font-size: 0.9rem;
                     }
                 }
-
-                .billing-address-input-content {
-                    .billing-inputs {
-                        .biinputs-container {
-                            .binputs {
-                                input {
-                                    width: 11rem;
-                                }
-                            }
-                        }
-                    }
-                }
             }
         }
     }
@@ -369,14 +375,9 @@ html {
 
         .checkout-main {
             .checkout-input-container {
-                .checkout-input-main {
-                    margin-left: 1rem;
-                }
 
                 .billing-address-input-content {
                     .billing-inputs {
-                        width: 95%;
-
                         .billing-checkbox {
                             p {
                                 font-size: 0.9rem;
@@ -416,7 +417,6 @@ html {
         .checkout-main {
             .total-price-container {
                 .total-price-main {
-                    padding: 1rem 0 1rem 1rem;
 
                     .total-price-content {
                         .total-inputs {
@@ -442,14 +442,13 @@ html {
             align-items: center;
 
             .checkout-input-container {
-                width: 90%;
+                width: 100%;
 
                 .checkout-input-main {
-                    margin-left: 2rem;
 
                     .checkout-header {
                         p {
-                            font-size: 1.1rem;
+                            font-size: 0.8rem;
                         }
                     }
 
@@ -514,6 +513,7 @@ html {
             .total-price-container {
                 width: 20rem;
                 height: 35rem;
+                align-self: flex-end;
 
                 .total-price-main {
                     h3 {
@@ -544,11 +544,11 @@ html {
         .checkout-main {
             .checkout-input-container {
                 .checkout-input-main {
-                    margin-left: 1rem;
+                    padding: 1rem;
 
                     .checkout-header {
                         p {
-                            font-size: 0.9rem;
+                            font-size: 0.7rem;
                         }
                     }
 
@@ -578,6 +578,9 @@ html {
                         .billing-inputs {
                             .biinputs-container {
                                 .binputs {
+                                    input {
+                                        width: 98%;
+                                    }
 
                                     label {
                                         font-size: 0.9rem;
@@ -614,12 +617,16 @@ html {
 
 @media only screen and (max-width:500px) {
     .checkout--container {
+        padding: 0;
+
         .checkout-main {
             width: 100%;
             margin-top: 2rem;
 
             .checkout-input-container {
                 width: 100%;
+                margin: 2rem 0 0rem 0;
+                border-bottom: 1px solid #000;
 
                 .checkout-input-main {
 
@@ -627,7 +634,8 @@ html {
                         p {
                             font-size: 0.7rem;
                         }
-                        span{
+
+                        span {
                             font-size: 0.8rem;
                         }
                     }
@@ -658,7 +666,7 @@ html {
                         .billing-inputs {
                             .billing-checkbox {
                                 p {
-                                    font-size: 0.7rem;
+                                    font-size: 0.8rem;
                                 }
                             }
 
@@ -669,6 +677,7 @@ html {
                             .btn-save {
                                 width: 8rem;
                                 height: 2.8rem;
+                                margin-bottom: 0;
                             }
                         }
                     }
@@ -677,9 +686,10 @@ html {
 
             .total-price-container {
                 margin: 0;
-                width: 90%;
-             
+                width: 100%;
+                align-self: center;
                 margin-bottom: 2rem;
+                border-radius: 0;
             }
         }
     }
@@ -690,8 +700,6 @@ html {
         .checkout-main {
             .checkout-input-container {
                 .checkout-input-main {
-                    margin-left: 0.5rem;
-
                     .checkout-header {
                         margin-bottom: 1rem;
 
@@ -748,6 +756,7 @@ html {
                             .btn-save {
                                 width: 7rem;
                                 height: 2.5rem;
+                                font-size: 0.8rem;
                             }
                         }
                     }
@@ -756,6 +765,7 @@ html {
 
             .total-price-container {
                 height: 33rem;
+
                 .total-price-main {
                     h3 {
                         font-size: 1rem;

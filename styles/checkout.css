@@ -26,6 +26,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0 12%;
 }
 
 .checkout--container .checkout-main {
@@ -33,7 +34,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -42,12 +43,11 @@ html {
 .checkout--container .checkout-main .checkout-input-container {
   background-color: #fff;
   margin: 1rem 0 2rem 0;
-  width: 63%;
+  width: 65%;
 }
 
 .checkout--container .checkout-main .checkout-input-container .checkout-input-main {
-  margin-left: 3rem;
-  padding: 2rem 1rem 0 1rem;
+  padding: 2rem;
 }
 
 .checkout--container .checkout-main .checkout-input-container .checkout-header {
@@ -62,6 +62,7 @@ html {
   padding-right: 0.5rem;
   color: #00000099;
   font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .checkout--container .checkout-main .checkout-input-container .checkout-header .checkout {
@@ -71,8 +72,9 @@ html {
 .checkout--container .checkout-main .checkout-input-container .checkout-header span {
   padding-right: 0.5rem;
   color: #00000099;
+  margin-top: 1px;
+  font-size: 1rem;
   font-weight: 100;
-  margin-top: -2px;
 }
 
 .checkout--container .checkout-main .checkout-input-container .billing-address-header {
@@ -114,21 +116,15 @@ html {
   padding-right: 1rem;
 }
 
-.checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs {
-  width: 90%;
-}
-
 .checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 1rem;
 }
 
 .checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container .binputs {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,8 +142,8 @@ html {
 }
 
 .checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container .binputs input {
-  height: 1.8rem;
-  width: 13rem;
+  padding: 0.5rem;
+  width: 95%;
   outline: none;
   padding-left: 0.5rem;
   border-radius: 3px;
@@ -207,7 +203,8 @@ html {
 }
 
 .checkout--container .checkout-main .total-price-container .total-price-main {
-  padding: 1rem 0 1rem 1.5rem;
+  padding: 1rem;
+  width: 100%;
 }
 
 .checkout--container .checkout-main .total-price-container .total-price-main h3 {
@@ -232,7 +229,6 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 2.2rem;
   margin: 2rem 0 2rem 0;
 }
 
@@ -273,6 +269,7 @@ html {
 }
 
 .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,16 +279,23 @@ html {
   border: 1px solid #00000080;
   height: 2rem;
   margin: 0.5rem 0 0 0;
-  width: 90%;
+  width: 100%;
   border-radius: 5px;
   margin-top: 1rem;
 }
 
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container .arrow {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container .coupon-code {
-  padding-left: 1rem;
+  padding: 0 0.5rem 0 0.5rem;
   border: none;
   outline: none;
-  width: 90%;
+  width: 100%;
 }
 
 .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container .material-icons-outlined {
@@ -334,7 +338,6 @@ html {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0 2rem 1rem 0;
 }
 
 .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .button button {
@@ -347,9 +350,15 @@ html {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1370px) {
+  .checkout--container {
+    padding: 0 5%;
+  }
+}
+
 @media only screen and (max-width: 1020px) {
   .checkout--container .checkout-main .checkout-input-container .checkout-header p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .checkout--container .checkout-main .checkout-input-container .checkout-header span {
     font-size: 1rem;
@@ -367,18 +376,9 @@ html {
   .checkout--container .checkout-main .checkout-input-container .billing-address-header a {
     font-size: 0.9rem;
   }
-  .checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container .binputs input {
-    width: 11rem;
-  }
 }
 
 @media only screen and (max-width: 910px) {
-  .checkout--container .checkout-main .checkout-input-container .checkout-input-main {
-    margin-left: 1rem;
-  }
-  .checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs {
-    width: 95%;
-  }
   .checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .billing-checkbox p {
     font-size: 0.9rem;
   }
@@ -394,9 +394,6 @@ html {
 }
 
 @media only screen and (max-width: 860px) {
-  .checkout--container .checkout-main .total-price-container .total-price-main {
-    padding: 1rem 0 1rem 1rem;
-  }
   .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-key {
     font-size: 0.8rem;
   }
@@ -416,13 +413,10 @@ html {
             align-items: center;
   }
   .checkout--container .checkout-main .checkout-input-container {
-    width: 90%;
-  }
-  .checkout--container .checkout-main .checkout-input-container .checkout-input-main {
-    margin-left: 2rem;
+    width: 100%;
   }
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header p {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header a {
     font-size: 1rem;
@@ -458,6 +452,8 @@ html {
   .checkout--container .checkout-main .total-price-container {
     width: 20rem;
     height: 35rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .checkout--container .checkout-main .total-price-container .total-price-main h3 {
     font-size: 1.3rem;
@@ -475,10 +471,10 @@ html {
 
 @media only screen and (max-width: 600px) {
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main {
-    margin-left: 1rem;
+    padding: 1rem;
   }
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header a {
     font-size: 0.9rem;
@@ -491,6 +487,9 @@ html {
   }
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header h2 {
     font-size: 1.4rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs input {
+    width: 98%;
   }
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs label {
     font-size: 0.9rem;
@@ -511,12 +510,17 @@ html {
 }
 
 @media only screen and (max-width: 500px) {
+  .checkout--container {
+    padding: 0;
+  }
   .checkout--container .checkout-main {
     width: 100%;
     margin-top: 2rem;
   }
   .checkout--container .checkout-main .checkout-input-container {
     width: 100%;
+    margin: 2rem 0 0rem 0;
+    border-bottom: 1px solid #000;
   }
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header p {
     font-size: 0.7rem;
@@ -537,7 +541,7 @@ html {
     font-size: 1.3rem;
   }
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs h3 {
     font-size: 1.3rem;
@@ -545,18 +549,20 @@ html {
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .btn-save {
     width: 8rem;
     height: 2.8rem;
+    margin-bottom: 0;
   }
   .checkout--container .checkout-main .total-price-container {
     margin: 0;
-    width: 90%;
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin-bottom: 2rem;
+    border-radius: 0;
   }
 }
 
 @media only screen and (max-width: 340px) {
-  .checkout--container .checkout-main .checkout-input-container .checkout-input-main {
-    margin-left: 0.5rem;
-  }
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header {
     margin-bottom: 1rem;
   }
@@ -587,6 +593,7 @@ html {
   .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .btn-save {
     width: 7rem;
     height: 2.5rem;
+    font-size: 0.8rem;
   }
   .checkout--container .checkout-main .total-price-container {
     height: 33rem;
