@@ -10,6 +10,7 @@ $(document).ready(() => {
     productDotClickSlider();
     bannerDragSlider();
     addToWishlist();
+    
     if($(window).innerWidth() <= 768){
         productTouchSlider();
     }
@@ -291,18 +292,11 @@ const addAddress=() =>{
 }
 
 //option active
-const optionActive=() =>{
-    $(".option").click(function() {
-        $(".options-wrapper").toggleClass("options-wrapper-active")
-    })
-} 
+const optionActive=(index) =>{
 
-const optionActive2=() =>{
-    $(".options").click(function() {
-        $(".options-wrappers").toggleClass("options-wrapper-actives")
-    })
-} 
+    $(".options-wrapper").eq(index).toggleClass("options-wrapper-active")
 
+} 
 
 //wish list heart
 const romanticmode=() =>{
