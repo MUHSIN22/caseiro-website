@@ -10,6 +10,7 @@
 .dashboard--container .navigation-container {
   display: block;
   width: 90%;
+  margin-bottom: 2rem;
 }
 
 .dashboard--container .navigation-container .navigation--wrapper .profile--nav {
@@ -46,8 +47,7 @@
 
 .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item {
   pointer-events: none;
-  margin-left: 2rem;
-  margin: 0.5rem 0 0 2rem;
+  margin: 0.5rem 0 0 1rem;
 }
 
 .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item .nav--icon {
@@ -89,7 +89,9 @@
     font-size: 1rem;
   }
   .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav {
-    height: 7rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item .nav--icon {
     width: 3.5rem;
@@ -105,7 +107,6 @@
     padding: 1.5rem;
   }
   .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav {
-    height: 5.5rem;
     padding: 0.2rem;
   }
   .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item {

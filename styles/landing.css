@@ -44,6 +44,9 @@
   display: -ms-flexbox;
   display: flex;
   width: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .products-page-wrapper .landing-cover .main-cover .cover-bottom .dp {
@@ -280,6 +283,9 @@
 }
 
 @media only screen and (max-width: 580px) {
+  .products-page-wrapper {
+    background: #fff;
+  }
   .products-page-wrapper .landing-cover {
     height: 25rem;
   }
