@@ -1,5 +1,6 @@
 .product-display-container {
   background-color: #E5E5E5;
+  padding: 8rem 12%;
 }
 
 .product-display-container .product-display-wrapper {
@@ -9,8 +10,6 @@
   -ms-grid-columns: 1.5fr 2.5fr;
       grid-template-columns: 1.5fr 2.5fr;
   width: 100%;
-  margin-top: 6rem;
-  padding: 4rem 5%;
   border-radius: 10px;
 }
 
@@ -21,6 +20,9 @@
   background: #fff;
   padding: 1rem;
   border-radius: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .product-display-container .product-display-wrapper .display-container .display-content {
@@ -33,7 +35,6 @@
 
 .product-display-container .product-display-wrapper .display-container .display-content .main-image {
   width: 100%;
-  height: calc(100vw / 3);
 }
 
 .product-display-container .product-display-wrapper .display-container .display-content span {
@@ -59,6 +60,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .product-display-container .product-display-wrapper .display-container .display-content .slider-container .display-slider img {
@@ -172,6 +175,19 @@
   border: 1px solid #000000;
   padding: 0 3%;
   height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-display-container .product-display-wrapper .product-description-container .product-quantity span {
+  cursor: pointer;
 }
 
 .product-display-container .product-display-wrapper .product-description-container .about-product h3 {
@@ -185,9 +201,15 @@
   color: #00000094;
 }
 
+@media only screen and (max-width: 1360px) {
+  .product-display-container {
+    padding: 8rem 5%;
+  }
+}
+
 @media only screen and (max-width: 1160px) {
-  .product-display-container .product-display-wrapper {
-    padding: 4rem 5%;
+  .product-display-container {
+    padding: 8rem 1rem;
   }
   .product-display-container .product-display-wrapper .display-container .display-content .display-slider img {
     margin: 1rem 0 1rem 0.5rem;
@@ -202,92 +224,21 @@
   }
 }
 
-@media only screen and (max-width: 1040px) {
-  .product-display-container .product-display-wrapper .display-container .display-content .main-image {
-    height: calc(100vw / 2.8);
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  .product-display-container .product-display-wrapper .product-description-container .product-price {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .product-display-container .product-display-wrapper .product-description-container .product-description .product-quantity {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-  .product-display-container .product-display-wrapper .product-description-container .product-description .about-product ul {
-    padding-top: 0;
-  }
-}
-
-@media only screen and (max-width: 936px) {
+@media only screen and (max-width: 800px) {
   .product-display-container .product-display-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .product-display-container .product-display-wrapper .display-container {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  .product-display-container .product-display-wrapper .display-container .display-content .main-image {
-    width: 100%;
-    height: calc(100vw / 2);
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 10px;
-    -o-object-position: center;
-       object-position: center;
-  }
-  .product-display-container .product-display-wrapper .display-container .display-content .slider-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .product-display-container .product-display-wrapper .display-container .display-content .slider-container .display-slider img {
-    height: 5rem;
-    width: 5rem;
-  }
-  .product-display-container .product-display-wrapper .display-container .display-content .slider-container .display-button-container {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding: 0;
-    width: 100%;
-    margin-top: 1rem;
-  }
-  .product-display-container .product-display-wrapper .display-container .display-content .slider-container .display-button-container button {
-    margin: 1rem;
-    width: 10rem;
-    height: 3rem;
-    font-size: 0.9rem;
+        grid-template-areas: "product" "about";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .product-display-container .product-display-wrapper .product-description-container {
-    width: 100%;
-    margin-left: 0;
-  }
-  .product-display-container .product-display-wrapper .display-container .display-content span {
-    font-size: 3rem;
+    margin: 0;
+    margin-top: 1rem;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .product-display-container .product-display-wrapper {
     margin-top: 0;
-    padding: 6rem 5%;
   }
   .product-display-container .product-display-wrapper .display-container .display-content .slider-container .display-button-container {
     padding: 0;
@@ -298,9 +249,6 @@
 }
 
 @media only screen and (max-width: 564px) {
-  .product-display-container .product-display-wrapper {
-    padding: 5rem 5%;
-  }
   .product-display-container .product-display-wrapper .display-container .display-content .slider-container .display-slider img {
     width: 4rem;
     height: 4rem;
@@ -314,6 +262,13 @@
 }
 
 @media only screen and (max-width: 472px) {
+  .product-display-container {
+    padding: 5rem 0;
+    background-color: #fff;
+  }
+  .product-display-container .product-display-wrapper .display-container {
+    margin: 0;
+  }
   .product-display-container .product-display-wrapper .display-container .display-content .slider-container .display-slider img {
     width: 3rem;
     height: 3rem;
