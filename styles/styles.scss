@@ -771,12 +771,37 @@ footer{
 .products-page-wrapper{
     background-color: $main-bg;
     padding-top: 6rem;
-    margin-bottom: 6rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid $gray;
     display: grid;
     height: 100vh;
-    grid-template-areas: 'nav products';
+    grid-template-areas: 'crump crump''nav products';
     grid-template-columns: 15rem auto;
     grid-gap: 2rem;
+    .bread-crump{
+        grid-area: crump;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        margin-left: 1rem;
+        li{
+            display: flex;
+            align-items: center;
+            opacity: 0.7;
+            &::after{
+                content: '>';
+                margin: 0 1rem ;
+            }
+            &:last-child{
+                opacity: 1;
+                &::after{
+                    content: ''
+                }
+            }
+        }
+    }
     .filter-navigation{
         grid-area: nav;
         height: 100%;
@@ -874,12 +899,14 @@ footer{
         width: 100%;
         height: calc(100vw / 5);
         position: relative;
+        border-radius: 10px;
     }
     .product--image{
         width: 100%;
         height: 100%;
         object-position: center;
         object-fit: cover;
+        border-radius: 8px;
     }
     .product--provider{
         position: absolute;
@@ -896,6 +923,7 @@ footer{
     }
     .card-btn-view--wrapper{
         width: 100%;
+        border-radius: 8px;
         height: 100%;
         position: absolute;
         top: 0;
@@ -1408,6 +1436,9 @@ footer{
         padding-top: 5rem;
         grid-template-columns: 1fr;
         grid-template-areas: 'products';
+        .bread-crump{
+            display: none;
+        }
         .filter-navigation{
             position: fixed;
             background: #Fff;

@@ -32,7 +32,32 @@ html{
     display: grid;
     grid-template-columns: 3fr 5fr;
     grid-gap: 2rem;
-    grid-template-areas: 'navigation content';
+    grid-template-areas: 'crump crump''navigation content';
+    border-bottom: 1px solid $gray;
+
+    .bread-crump{
+        grid-area: crump;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        li{
+            display: flex;
+            align-items: center;
+            opacity: 0.7;
+            &::after{
+                content: '>';
+                margin: 0 1rem ;
+            }
+            &:last-child{
+                opacity: 1;
+                &::after{
+                    content: ''
+                }
+            }
+        }
+    }
     .navigation--wrapper{
         grid-area: navigation;
         position: sticky;
@@ -153,6 +178,9 @@ html{
         padding: 5rem 1rem;
         grid-template-columns: 1fr;
         grid-template-areas: 'content';
+        .bread-crump{
+            display: none;
+        }
     }
 }
 @media only screen and (max-width:550px) {
