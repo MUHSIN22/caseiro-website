@@ -35,14 +35,15 @@
 }
 
 .cart--container{
-
-    .cart-main{
-        .filter-container{}
+        padding: 0 12%;
 .cart-items--wrapper {
+    flex: 1!important;
+}
     .cart--header {
         display: flex;
         justify-content: space-between;
         padding: 1rem 2rem 3rem !important;
+    }
         .filter-date {
             display: flex;
             padding-left: 0.5rem;
@@ -65,7 +66,6 @@
 
             }
         }
-    }
 
     .cart-item-wrapper{
         .cart-content {
@@ -76,9 +76,11 @@
         }
     }
 }
+@media only screen and (max-width:1370px){
+ .cart--container{
+     padding: 0 5%;
+ }   
 }
-}
-
 @media only screen and (max-width:850px){
     .filter-container{
         margin-top: 1rem;

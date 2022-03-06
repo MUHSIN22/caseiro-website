@@ -4,7 +4,7 @@
 }
 
 .products-page-wrapper {
-      grid-template-areas: "cover cover" "filter products" "footer footer";
+      grid-template-areas: "cover cover" "filter products" "footer footer";
   -ms-grid-columns: 16rem auto;
       grid-template-columns: 16rem auto;
   -ms-grid-rows: auto auto auto;
@@ -125,12 +125,21 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .products-page-wrapper .product-listing .product-card {
   width: calc(100% / 4 - 2rem);
-  margin: 1rem;
-  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 7rem;
 }
 
 .products-page-wrapper .product-listing .product-card .card-content {
@@ -177,11 +186,6 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
-  display: inline-block;
-  width: 180px;
-  white-space: nowrap;
-  overflow: hidden !important;
-  text-overflow: ellipsis;
 }
 
 .products-page-wrapper .product-listing .product-card .card-content .button-container {
@@ -191,6 +195,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .products-page-wrapper .product-listing .product-card .card-content .button-container .cost {
@@ -199,6 +207,7 @@
 }
 
 .products-page-wrapper .product-listing .product-card .card-content .button-container button {
+  cursor: pointer;
   background: linear-gradient(93.46deg, #DE388D 0%, #FF5D50 100%);
   border: none;
   border-radius: 5px;
@@ -206,6 +215,7 @@
   font-weight: 600;
   width: 5rem;
   font-size: 0.8rem;
+  height: 2rem;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -240,7 +250,7 @@
 
 @media only screen and (max-width: 850px) {
   .products-page-wrapper {
-        grid-template-areas: "cover " "products";
+        grid-template-areas: "cover " "products";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
   }

@@ -20,16 +20,16 @@ html {
 }
 
 .cart--container {
-    padding: 0 5%;
+    padding: 0 12%;
     background: #EEEEEE;
 
     .cart-main {
         display: flex;
-
+    }
         .cart-items--wrapper {
             margin-top: 8rem;
             width: 70%;
-
+        }
             .cart--header {
                 background: #fff;
                 width: 100%;
@@ -37,18 +37,18 @@ html {
                 height: 3rem;
                 margin-bottom: 1rem;
                 padding: 2rem 2rem 3rem;
-
+            }
                 .cart--heading {
                     font-weight: 500;
                     color: #000000;
                 }
-            }
+            
 
             .cart-item-wrapper {
                 background: #fff;
                 border-radius: 10px;
                 margin-bottom: 1rem;
-
+            }
                 .cart-content {
                     display: flex;
                     padding: 0.5rem;
@@ -64,7 +64,7 @@ html {
                         width: 100%;
                         padding: 1rem;
                         padding-top: 0.5rem;
-
+                    }
                         .item-name {
                             width: 100%;
                             display: flex;
@@ -75,13 +75,10 @@ html {
                                 font-weight: 600;
                             }
 
-                            .checkbox-wrapper {
                                 .checkbox {
                                     border: 1px solid #000000;
                                     border-radius: 3px;
                                 }
-                            }
-
                         }
 
                         .price-item {
@@ -97,6 +94,7 @@ html {
 
                         .quantity-wrapper {
                             display: flex;
+align-items: center;
                             margin-top: 0.5rem;
                             margin-bottom: 0.5rem;
 
@@ -133,9 +131,8 @@ html {
                             }
                         }
                     }
-                }
-            }
-        }
+        
+        
 
         .total-price-container {
             background-color: #fff;
@@ -263,9 +260,13 @@ html {
                 }
             }
         }
-    }
 }
 
+@media only screen and (max-width:1370px) {
+    .cart--container{
+        padding: 0 5%;
+    }
+}
 @media only screen and (max-width:1000px) {
     .cart--container {
         .cart-main {

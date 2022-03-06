@@ -83,7 +83,7 @@
         }
 
         .product-description-container {
-            grid-area: about ;
+            grid-area: about;
             margin-left: 1rem;
             border-radius: 10px;
             background: #fff;
@@ -141,7 +141,6 @@
                 margin-top: 1.5rem;
                 margin-bottom: 1.5rem;
                 display: flex;
-
                 strong {
                     margin-right: 0.5rem;
                 }
@@ -218,6 +217,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 800px) {
     .product-display-container{
         .product-display-wrapper{
