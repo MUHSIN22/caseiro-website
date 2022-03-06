@@ -284,11 +284,10 @@ const avatar=(index) =>{
 //manage address input field appears
 
 const addAddress=() =>{
-    $(".add-btn").click(function(){
         $(".new-address-wrapper").addClass("none-new-address")
         $(".checkout-input-container").addClass("active-fields")
         $(".manage-address-card").addClass("card-active")   
-    })
+    
 }
 
 //option active
