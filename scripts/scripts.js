@@ -11,7 +11,7 @@ $(document).ready(() => {
     bannerDragSlider();
     addToWishlist();
     if($(window).innerWidth() <= 768){
-        productTouchSlider()
+        productTouchSlider();
     }
 })
 
@@ -266,13 +266,6 @@ const openPasswordChange = () =>{
     });
 }
 
-//avatar selecting color change
-const avatarSelected = () =>{
-    $(".avatar-wrapper").click(function(){
-        $(this).toggleClass("clicked")
-    })
-}
-
 const addToWishlist=() =>{
     $(".wishlist-outlined").click(event => {
         console.log(event.target.innerHTML);
@@ -280,6 +273,13 @@ const addToWishlist=() =>{
         event.target.styles()
     })
 }
+
+const avatar=(avatar) =>{
+    token = avatar
+    if(token)$(".clicked").click()
+    
+}
+
 //manage address input field appears
 
 const addAddress=() =>{
