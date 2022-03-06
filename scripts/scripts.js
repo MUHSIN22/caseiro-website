@@ -274,10 +274,10 @@ const addToWishlist=() =>{
     })
 }
 
-const avatar=(avatar) =>{
-    token = avatar
-    if(token)$(".clicked").click()
-    
+const avatar=(index) =>{
+    console.log(index);
+    $(".clicked").css({"border-color":"#C4C4C4"})
+    $(".clicked").eq(index-1).css({'border-color':"red"})
 }
 
 //manage address input field appears
