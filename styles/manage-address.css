@@ -256,7 +256,14 @@
   .manage-address-wrapper .manage-address-card {
     padding-bottom: 0;
     border-radius: 0;
+    padding: 1rem 0 0 1rem;
     margin-bottom: 0;
+  }
+  .manage-address-wrapper .manage-address-content {
+    width: 90% !important;
+  }
+  .manage-address-wrapper .manage-address-content .manage-address-details {
+    margin-left: 0 !important;
   }
   .manage-address-wrapper .manage-address-content .manage-address-details .new-address-wrapper {
     margin-bottom: 2rem;
@@ -265,15 +272,24 @@
     width: 100%;
     border-radius: 0;
   }
+  .checkout-input-container .checkout-input-main {
+    margin-left: 0;
+  }
   .checkout-input-container .checkout-input-main .billing-address-header h2 {
     font-size: 1.3rem;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs {
+    width: 100%;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs input {
+    width: 98%;
   }
   .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox .checkbox {
     height: 1.3rem;
     margin-right: 0.5rem;
   }
   .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs h3 {
     font-size: 1.3rem;
@@ -284,18 +300,9 @@
   }
 }
 
-@media only screen and (max-width: 482px) {
+@media only screen and (max-width: 386px) {
   .manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details p {
     font-size: 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .manage-address-wrapper .manage-address-card {
-    padding-left: 0;
-  }
-  .checkout-input-container .checkout-input-main {
-    margin-left: 0.5rem;
   }
   .checkout-input-container .checkout-input-main .billing-address-header h2 {
     font-size: 1.1rem;
