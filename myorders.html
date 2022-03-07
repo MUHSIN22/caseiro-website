@@ -95,14 +95,18 @@
     </header>
     
     <div class="order-container"> 
-        <button class="mobile-filter-button material-icons-outlined" onclick="openFilter()">filter_alt</button>
+        <button class="mobile-filter-button material-icons-outlined" onclick="orderFilter()">filter_alt</button>
         <ul class="bread-crump">
             <li>Home</li>
             <li>Account</li>
             <li>Wishlist</li>
         </ul>
-            <div onclick="orderFilter()" class="filter-container">
+            <div class="filter-container">
+                <div class="nav-header">
+                    <i class="material-icons-outlined" onclick="closeOrder()">arrow_back</i>
+                </div>
                 <div class="filter-header">
+                 
                     <h3>Filters</h3>
                 </div>
                 <div class="filter-content">

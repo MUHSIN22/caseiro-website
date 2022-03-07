@@ -159,6 +159,7 @@ html{
     padding-right: 0.5rem;
 
     select {
+        cursor: pointer;
         border: none;
         font-weight: 600;
         background: none;
@@ -170,6 +171,7 @@ html{
     }
 }
 .filter-container {
+    cursor: pointer;
     grid-area: filter;
     background: #fff;
     width: 13rem;
@@ -177,6 +179,11 @@ html{
     border-radius: 10px;
     margin-right: 1rem;
     padding-bottom: 1rem;
+    
+}
+.nav-header{
+    display: none;
+    cursor: pointer;
 }
 .filter-header {
     padding: 1rem;
@@ -247,6 +254,24 @@ html{
                 opacity: 0;
         
         }
+        .filter-container{
+          
+        .filter-items{
+            padding: 0.4rem 3%;
+        }
+    }
+    .nav-header{
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        background: #fff;
+        i{
+            cursor: pointer;
+        }
+    }
     }
 }
 

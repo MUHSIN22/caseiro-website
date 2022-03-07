@@ -224,6 +224,7 @@ html {
 }
 
 .order-container .filter-date select {
+  cursor: pointer;
   border: none;
   font-weight: 600;
   background: none;
@@ -234,6 +235,7 @@ html {
 }
 
 .order-container .filter-container {
+  cursor: pointer;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: filter;
@@ -245,6 +247,11 @@ html {
   border-radius: 10px;
   margin-right: 1rem;
   padding-bottom: 1rem;
+}
+
+.order-container .nav-header {
+  display: none;
+  cursor: pointer;
 }
 
 .order-container .filter-header {
@@ -314,6 +321,21 @@ html {
     padding-top: 4rem;
     display: none;
     opacity: 0;
+  }
+  .order-container .filter-container .filter-items {
+    padding: 0.4rem 3%;
+  }
+  .order-container .nav-header {
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+  }
+  .order-container .nav-header i {
+    cursor: pointer;
   }
 }
 

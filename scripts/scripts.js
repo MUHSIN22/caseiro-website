@@ -249,6 +249,10 @@ const openFilter = () => {
     $(".filter-navigation").css({display: "block"})
     $(".filter-navigation").animate({opacity:1},300)
 }
+const orderFilter = () =>{
+    $(".filter-container").css({display: "block"})
+    $(".filter-container").animate({opacity:1},300)
+}
 
 const closeFilter = () => {
     $(".filter-navigation").animate({opacity:0},300,() => {
@@ -256,6 +260,11 @@ const closeFilter = () => {
     })
 }
 
+const closeOrder = () =>{
+        $(".filter-container").animate({opacity:0},300,() => {
+            $(".filter-container").css({display: "none"})
+        })
+}
 
 // Profile page
 
