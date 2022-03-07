@@ -298,10 +298,8 @@ const optionActive=(index) =>{
 } 
 
 //wish list heart
-const romanticmode=() =>{
-    $(".material-icons-outlined").click(function() {
-        $(".wishlist").toggleClass("heart")
-    })
+const romanticmode=(event) =>{
+    event.target.innerHTML = "favorite"
 }
 
 const productromantic=() =>{
@@ -310,3 +308,8 @@ const productromantic=() =>{
     })
 }
 
+/// product-page
+
+const productSelect=(event)=>{
+    $(".main-image").attr("src",event.target.src)
+}

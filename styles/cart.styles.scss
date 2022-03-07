@@ -26,6 +26,9 @@ html{
 }
 
 .dashboard--container{
+    .mobile-filter-button{
+        display: none;
+    }
     padding: 10rem 12%;
     background: $main-bg;
     display: grid;
@@ -226,6 +229,20 @@ html{
 }
 @media only screen and (max-width: 850px){
     .dashboard--container{
+        .mobile-filter-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 0.5rem;
+            font-size: 2rem;
+            background: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
+            background: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+            border-radius: 50%;
+            border: none;
+            color: #fff;
+            z-index: 1000;
+            display: block;
+          }
         padding: 5rem 1rem;
         grid-template-areas: 'content''bill';
         grid-template-columns: 1fr;
@@ -234,7 +251,7 @@ html{
         }
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: px) {
     .dashboard--container{
         padding: 5rem 0.5rem;
         grid-gap: 1rem;
@@ -290,55 +307,79 @@ html{
         }
     }
 }
-// .empty-wrapper{
-//     width: 100%;
-//     height: 100vh;
-//     background: $main-bg;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-// .empty-container{
-//     width: 76%;
-//     height: 70%;
-//     padding: 3rem 0;
-//     background: #fff;
-//     border-radius: 20px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-//     .btn-empty{
-//         background: $gradient-primary;
-//         padding: 0.5rem 1rem;
-//         border-radius: 5px;
-//         color: #fff;
-//         font-weight: 600;
-//         border: none;
-//     }
-//     .empty-message{
-//         margin-bottom: 1rem
-//     }
-//     .empty--title{
-//         margin-top: 1rem;
-//     }
-// }
+@media only screen and (max-width:460px) {
+   
+        
+        .dashboard--container{
+            padding: 2rem 0 0 0;
+        .cart--header{
+            border-radius: 0;
+            font-size: 0.9rem;
 
-// @media only screen and (max-width: 768px) {
-//     .empty-wrapper{
-//         background: #fff;
-//     }
-//     .empty-container{
-//         width: 100%;
-//         height: 100%;
-//         border-radius: 0;
-//     }
-// }
+        }
+        .filter-date{
+            width: 7rem;
+            select{
+                font-size:0.7rem;
+                
+            }
+        }
+        .cart-item{
+            margin: 0;
+            border-radius: 0;
+        }
+        .cart-item--image{
+            height: 7rem;
+        }
+        .cart-item--title{
+            font-size:1rem;
+        }
+        .price{
+            font-size: 0.9rem;
+        }
+        .quantity--wrapper{
+            padding: 0;
+        }
+        .qty--title{
+            font-size: 0.9rem;
+        }
+        .quantity{
+            margin: 0 0.2rem;
+        }
+        .delete--btn{
+            font-size:0.9rem;
+        }
+        .total--price{
+            font-size:0.9rem;
+        }
+        .price{
+            font-size: 0.8rem;
 
-// @media only screen and (max-width: 550px) {
-//     .empty-container{
-//         .empty--title{
-//             font-size: 1.2rem;
-//         }
-//     }
-// }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:370px) {
+
+        .dashboard--container{
+            .cart-item--image{
+                height: 6rem;
+            }
+            .cart-item--title{
+                font-size: 0.9rem;
+            }
+            .cart--heading{
+                font-size: 1.1rem;
+            }
+            .price{
+                font-size: 0.7rem;
+            }
+            .quantity--changer{
+                font-size: 1rem;
+            }
+            .quantity{
+                padding: 1px 0.4rem;
+            }
+        }
+}
