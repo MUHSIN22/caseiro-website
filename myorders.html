@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/myorders.css">
+    <link rel="stylesheet" type="text/css" href="styles/myorder.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/add-to-cart.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <title>Caseiro orders</title>
@@ -94,10 +93,13 @@
             </li>
         </ul>
     </header>
-    <button class="btn-filter material-icons-outlined" onclick="openFilter()">filter_alt</button>
-    <div class="cart--container">
-        <div class="cart-main">
-           
+    <button class="mobile-filter-button material-icons-outlined" onclick="openFilter()">filter_alt</button>
+    <div class="order-container"> 
+        <ul class="bread-crump">
+            <li>Home</li>
+            <li>Account</li>
+            <li>Wishlist</li>
+        </ul>
             <div class="filter-container">
                 <div class="filter-header">
                     <h3>Filters</h3>
@@ -122,84 +124,120 @@
                 </div>
             </div>
             <div class="cart-items--wrapper">
-                <div class="cart--header">
-                    <h2 class="cart--heading">My Cart ( 5 )</h2>
-                    <div class="filter-date">
-                        <select name="filter" id="">
-                            <option value="Past 6 months">Past 6 months</option>
-                            <option value="Past 6 months">Past 6 months</option>
-                            <option value="Past 6 months">Past 6 months</option>
-                            <option value="Past 6 months">Past 6 months</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="cart-item-wrapper">
-                    <div class="cart-content">
-                        <img class="item-image" src="/assets/images/ck.jpg" alt="" />
-                        <div class="item-contents">
-                            <div class="item-name">
-                                <h3>Wajah Ceramic Vase</h3>
-                            </div>
-                            <p class="price-item">AED 500.00</p>
-                            <strong class="stock" style="color:#005509">Delivered</strong>
+               
 
-                            <div class="delete-total-wrapper">
-                                <small>18 December 2020</small>
+                <div class="dashboard--container">
+                  
+                    <div class="cart-content">
+                        <div class="cart--header">
+                            <h2 class="cart--heading">My orders ( 5 )</h2>
+                            <div class="filter-date">
+                                <select name="filter" id="">
+                                    <option value="Past 6 months">Past 6 months</option>
+                                    <option value="Past 6 months">Past 6 months</option>
+                                    <option value="Past 6 months">Past 6 months</option>
+                                    <option value="Past 6 months">Past 6 months</option>
+                                </select>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="cart-item-wrapper">
-                    <div class="cart-content">
-                        <img class="item-image" src="/assets/images/ck.jpg" alt="" />
-                        <div class="item-contents">
-                            <div class="item-name">
-                                <h3>Wajah Ceramic Vase</h3>
-                            </div>
-                            <p class="price-item">AED 500.00</p>
-                            <strong class="stock" style="color:#005509">Delivered</strong>
-
-                            <div class="delete-total-wrapper">
-                                <small>18 December 2020</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-item-wrapper">
-                    <div class="cart-content">
-                        <img class="item-image" src="/assets/images/ck.jpg" alt="" />
-                        <div class="item-contents">
-                            <div class="item-name">
-                                <h3>Wajah Ceramic Vase</h3>
-                              
-                            </div>
-                            <p class="price-item">AED 500.00</p>
-                            <strong class="stock" style="color:#005509">Delivered</strong>
-
-                            <div class="delete-total-wrapper">
-                                <small>18 December 2020</small>
+                        <div class="cart--card">
+                            <div class="cart-item">
+                                <img src="/assets/images/ck.jpg" class="cart-item--image" alt="">
+                                <div class="cart-item--body">
+                                    <div class="cart-product">
+                                        <h4 class="cart-item--title">Wajah Ceramic Vase</h4>
+                                        <input type="checkbox" name="cart--check" class="cart--check">
+                                    </div>
+                                    <strong class="price">AED 500.00</strong>
+                                    <p class="stock-status">In Stock</p>
+                                    <div class="quantity--wrapper">
+                                        <strong class="qty--title">QTY: </strong>
+                                        <span class="material-icons-outlined quantity--changer">remove</span>
+                                        <span class="quantity">2</span>
+                                        <span class="material-icons-outlined quantity--changer">add</span>
+                                    </div>
+                                    <div class="delete-and-total--wrapper">
+                                        <a href="#" class="delete--btn">Delete</a>
+                                        <strong class="total--price">Total: <span class="price">500.00</span></strong>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="cart-item-wrapper">
-                    <div class="cart-content">
-                        <img class="item-image" src="/assets/images/ck.jpg" alt="" />
-                        <div class="item-contents">
-                            <div class="item-name">
-                                <h3>Wajah Ceramic Vase</h3>
+            
+                        <div class="cart--card">
+                            <div class="cart-item">
+                                <img src="/assets/images/ck.jpg" class="cart-item--image" alt="">
+                                <div class="cart-item--body">
+                                    <div class="cart-product">
+                                        <h4 class="cart-item--title">Wajah Ceramic Vase</h4>
+                                        <input type="checkbox" name="cart--check" class="cart--check">
+                                    </div>
+                                    <strong class="price">AED 500.00</strong>
+                                    <p class="stock-status">In Stock</p>
+                                    <div class="quantity--wrapper">
+                                        <strong class="qty--title">QTY: </strong>
+                                        <span class="material-icons-outlined quantity--changer">remove</span>
+                                        <span class="quantity">2</span>
+                                        <span class="material-icons-outlined quantity--changer">add</span>
+                                    </div>
+                                    <div class="delete-and-total--wrapper">
+                                        <a href="#" class="delete--btn">Delete</a>
+                                        <strong class="total--price">Total: <span class="price">500.00</span></strong>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="price-item">AED 500.00</p>
-                            <strong class="stock" style="color:#005509">Delivered</strong>
-
-                            <div class="delete-total-wrapper">
-                                <small>18 December 2020</small>
+                        </div>
+            
+                        <div class="cart--card">
+                            <div class="cart-item">
+                                <img src="/assets/images/ck.jpg" class="cart-item--image" alt="">
+                                <div class="cart-item--body">
+                                    <div class="cart-product">
+                                        <h4 class="cart-item--title">Wajah Ceramic Vase</h4>
+                                        <input type="checkbox" name="cart--check" class="cart--check">
+                                    </div>
+                                    <strong class="price">AED 500.00</strong>
+                                    <p class="stock-status">In Stock</p>
+                                    <div class="quantity--wrapper">
+                                        <strong class="qty--title">QTY: </strong>
+                                        <span class="material-icons-outlined quantity--changer">remove</span>
+                                        <span class="quantity">2</span>
+                                        <span class="material-icons-outlined quantity--changer">add</span>
+                                    </div>
+                                    <div class="delete-and-total--wrapper">
+                                        <a href="#" class="delete--btn">Delete</a>
+                                        <strong class="total--price">Total: <span class="price">500.00</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="cart--card">
+                            <div class="cart-item">
+                                <img src="/assets/images/ck.jpg" class="cart-item--image" alt="">
+                                <div class="cart-item--body">
+                                    <div class="cart-product">
+                                        <h4 class="cart-item--title">Wajah Ceramic Vase</h4>
+                                        <input type="checkbox" name="cart--check" class="cart--check">
+                                    </div>
+                                    <strong class="price">AED 500.00</strong>
+                                    <p class="stock-status">In Stock</p>
+                                    <div class="quantity--wrapper">
+                                        <strong class="qty--title">QTY: </strong>
+                                        <span class="material-icons-outlined quantity--changer">remove</span>
+                                        <span class="quantity">2</span>
+                                        <span class="material-icons-outlined quantity--changer">add</span>
+                                    </div>
+                                    <div class="delete-and-total--wrapper">
+                                        <a href="#" class="delete--btn">Delete</a>
+                                        <strong class="total--price">Total: <span class="price">500.00</span></strong>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
