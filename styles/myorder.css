@@ -305,6 +305,15 @@ html {
   }
   .order-container .filter-container {
     display: none;
+    position: fixed;
+    background: #Fff;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 4rem;
+    display: none;
+    opacity: 0;
   }
 }
 

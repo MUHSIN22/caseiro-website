@@ -292,7 +292,6 @@ const addAddress=() =>{
 
 //option active
 const optionActive=(index) =>{
-
     $(".options-wrapper").eq(index).toggleClass("options-wrapper-active")
 
 } 
@@ -310,6 +309,8 @@ const productromantic=() =>{
 
 /// product-page
 
-const productSelect=(event)=>{
+const productSelect=(event,index)=>{
     $(".main-image").attr("src",event.target.src)
+    $(".slide").css({"border-color":"#C4C4C4"})
+    $(".slide").eq(index-1).css({'border-color':"red"})
 }
