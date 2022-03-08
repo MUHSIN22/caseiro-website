@@ -6,7 +6,7 @@
 .product-display-container .product-display-wrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "crump crump" "product about";
+      grid-template-areas: "crump crump" "product about";
   -ms-grid-columns: 1.5fr 2.5fr;
       grid-template-columns: 1.5fr 2.5fr;
   width: 100%;
