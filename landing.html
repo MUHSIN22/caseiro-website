@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="/styles/landing.css">
-    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <title>Caseiro Products</title>
 </head>
+
 <body>
     <header>
         <div class="ad">
 
         </div>
         <div class="head">
-			<div class="menu-icon" onclick="toggleMenu()">
-				<div>
-					<span></span>
-					<span></span>
-				</div>
-			</div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <ul id="category-list">
                 <li>
                     <a class="category category--active" href="#">Art</a>
@@ -50,7 +52,7 @@
                 </li>
                 <li class="category search-icon-wrapper" onclick="openSearch()">
                     <i class="material-icons search-icon--link">search</i>
-                </li> 
+                </li>
                 <li class="category">
                     <a href="/profile.html" class="material-icons">person_outline</a>
                 </li>
@@ -59,65 +61,66 @@
                 </li>
             </ul>
         </div>
-		<form class="search-container">
-			<div class="search-wrapper">
-				<i class="material-icons search-icon">search</i>
-				<input type="search" name="search" placeholder="Search here..." id="search-input" class="search-input">
-				<button type="submit" class="btn-search">Search</button>
-				<i class="material-icons-outlined close-icon" onclick="closeSearch()">close</i>
-			</div>
-		</form>
+        <form class="search-container">
+            <div class="search-wrapper">
+                <i class="material-icons search-icon">search</i>
+                <input type="search" name="search" placeholder="Search here..." id="search-input" class="search-input">
+                <button type="submit" class="btn-search">Search</button>
+                <i class="material-icons-outlined close-icon" onclick="closeSearch()">close</i>
+            </div>
+        </form>
 
-		<ul class="mobile-menu">
-			<li>
-				<a class="menu--item" href="#">Art</a>
-			</li>
-			<li>
-				<a class="menu--item" href="#">Food</a>
-			</li>
-			<li>
-				<a class="menu--item" href="#">Fashion</a>
-			</li>
-			<li>
-				<a class="menu--item" href="#">Gift</a>
-			</li>
-			<li>
-				<a class="menu--item" href="#">Beauty</a>
-			</li>
-			<li>
-				<a class="menu--item" href="#">About</a>
-			</li>
-			<li>
-				<a class="menu--item" href="#">Support</a>
-			</li>
-		</ul>
+        <ul class="mobile-menu">
+            <li>
+                <a class="menu--item" href="#">Art</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Food</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Fashion</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Gift</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Beauty</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">About</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Support</a>
+            </li>
+        </ul>
     </header>
-    
+
     <button class="btn-filter material-icons-outlined" onclick="openFilter()">filter_alt</button>
 
     <main class="products-page-wrapper">
         <div class="landing-cover">
             <div class="main-cover">
-                <img class="banner"  src="/assets/images/seller-banner.png" alt="">
+                <img class="banner" src="/assets/images/seller-banner.png" alt="">
                 <div class="cover-bottom">
                     <img class="dp" src="/assets/images/namshi_square.jpg" alt="">
-                   <div class="bottom-content">
-                    <strong>NAMSHI</strong>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    <div class="rating-container">
-                        <small>Rating: </small> <span class="material-icons-outlined">
-star_purple500
-</span><span class="material-icons-outlined">
-    star_purple500
-    </span><span class="material-icons-outlined">
-        star_purple500
-        </span><span class="material-icons-outlined">
-            star_purple500
-            </span>
+                    <div class="bottom-content">
+                        <strong>NAMSHI</strong>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s</p>
+                        <div class="rating-container">
+                            <small>Rating: </small> <span class="material-icons-outlined">
+                                star_purple500
+                            </span><span class="material-icons-outlined">
+                                star_purple500
+                            </span><span class="material-icons-outlined">
+                                star_purple500
+                            </span><span class="material-icons-outlined">
+                                star_purple500
+                            </span>
+                        </div>
+
                     </div>
-          
-                   </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -130,9 +133,9 @@ star_purple500
             <div class="filter-header">
                 <p>FILTER</p>
                 <img src="/assets/images/filter.png" alt="">
-             </div>
+            </div>
             <div class="filter-wrapper">
-             
+
                 <h3 class="filter--title">Category</h3>
                 <ul class="categories filter--object">
                     <li class="category">
@@ -220,14 +223,14 @@ star_purple500
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex One for Unisex </p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
 
@@ -235,15 +238,15 @@ star_purple500
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
 
@@ -251,15 +254,15 @@ star_purple500
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
 
@@ -267,328 +270,328 @@ star_purple500
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-             
+
             <div class="product-card">
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <span class="material-icons wishlist-outlined">
                         favorite_border
-                        </span>
+                    </span>
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
             <div class="product-card">
@@ -596,151 +599,153 @@ star_purple500
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <div class="product-card">
                 <div class="card-content">
                     <img class="item" src="/assets/images/perfume3.webp" alt="">
                     <p>Calvin Klein One for Unisex
                         One for Unisex</p>
-                        <div class="button-container">
-                            <p class="cost">AED 500.00</p>
-                            <button>Add to cart</button>
-                        </div>
-                       
+                    <div class="button-container">
+                        <p class="cost">AED 500.00</p>
+                        <button>Add to cart</button>
+                    </div>
+
                 </div>
             </div>
-            
-            </div>
+
+        </div>
         </div>
     </main>
     <footer>
-		<img src="assets/images/footer logo.png" class="footer-logo" alt="">
-		<div class="help-container">
-			<h3 class="footer--title">Help</h3>
-			<ul class="footer-links">
-				<li>
-					<a href="#" class="footer--link">Help Center</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Contact Us</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Return & Exchange</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Rewards</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Refer a Friend</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Shipping Policy</a>
-				</li>
-			</ul>
-		</div>
-		<div class="shop-container">
-			<h3 class="footer--title">Shop</h3>
-			<ul class="footer-links">
-				<li>
-					<a href="#" class="footer--link">Men’s</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Women’s</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Kid’s</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Accessories</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Sale</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Students</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">E-gift Codes</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Corporate orders</a>
-				</li>
-			</ul>
-		</div>
-		<div class="company-container">
-			<h3 class="footer--title">Company</h3>
-			<ul class="footer-links">
-				<li>
-					<a href="#" class="footer--link">About Us</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Careers</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Become a Retailer</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Store Locator</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Ambassadors</a>
-				</li>
-				<li>
-					<a href="#" class="footer--link">Aﬃliate Program</a>
-				</li>
-			</ul>
-		</div>
-		<p class="copyright">
-			&copy;caseiro. All Rights Reserved. Privacy Policy & Copyright Notice.
-		</p>
-	</footer>
+        <img src="assets/images/footer logo.png" class="footer-logo" alt="">
+        <div class="help-container">
+            <h3 class="footer--title">Help</h3>
+            <ul class="footer-links">
+                <li>
+                    <a href="#" class="footer--link">Help Center</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Return & Exchange</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Rewards</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Refer a Friend</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Shipping Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="shop-container">
+            <h3 class="footer--title">Shop</h3>
+            <ul class="footer-links">
+                <li>
+                    <a href="#" class="footer--link">Men’s</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Women’s</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Kid’s</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Accessories</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Sale</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Students</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">E-gift Codes</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Corporate orders</a>
+                </li>
+            </ul>
+        </div>
+        <div class="company-container">
+            <h3 class="footer--title">Company</h3>
+            <ul class="footer-links">
+                <li>
+                    <a href="#" class="footer--link">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Careers</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Become a Retailer</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Store Locator</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Ambassadors</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Aﬃliate Program</a>
+                </li>
+            </ul>
+        </div>
+        <p class="copyright">
+            &copy;caseiro. All Rights Reserved. Privacy Policy & Copyright Notice.
+        </p>
+    </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 <script src="scripts/scripts.js"></script>
+
 </html>

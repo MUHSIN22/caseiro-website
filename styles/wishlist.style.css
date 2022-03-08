@@ -135,11 +135,26 @@ html {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  text-decoration: none;
+  color: #0c0c0c;
 }
 
 .dashboard--container .nav--item:hover {
   background: #eeeeee;
   border-radius: 10px;
+}
+
+.dashboard--container .nav--item--active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
+  background: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.dashboard--container .nav--item--active:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
+  background: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+  color: #fff;
 }
 
 .dashboard--container .nav-active {

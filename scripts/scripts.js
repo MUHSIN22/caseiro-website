@@ -328,6 +328,8 @@ const productSelect=(event,index)=>{
 
 
 const cartPlaceOrder = () => {
-    $(window).location.href = "/products.html"
-    console.log("Jere");
+    window.location.href = "checkout.html"
+}
+const goToSellerPage = () => {
+    window.location.href = "landing.html"
 }
