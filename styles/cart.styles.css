@@ -407,53 +407,6 @@ html {
   }
 }
 
-@media only screen and (max-width: 460px) {
-  .dashboard--container {
-    padding: 2rem 0 0 0;
-  }
-  .dashboard--container .cart--header {
-    border-radius: 0;
-    font-size: 0.9rem;
-  }
-  .dashboard--container .filter-date {
-    width: 7rem;
-  }
-  .dashboard--container .filter-date select {
-    font-size: 0.7rem;
-  }
-  .dashboard--container .cart-item {
-    margin: 0;
-    border-radius: 0;
-  }
-  .dashboard--container .cart-item--image {
-    height: 7rem;
-  }
-  .dashboard--container .cart-item--title {
-    font-size: 1rem;
-  }
-  .dashboard--container .price {
-    font-size: 0.9rem;
-  }
-  .dashboard--container .quantity--wrapper {
-    padding: 0;
-  }
-  .dashboard--container .qty--title {
-    font-size: 0.9rem;
-  }
-  .dashboard--container .quantity {
-    margin: 0 0.2rem;
-  }
-  .dashboard--container .delete--btn {
-    font-size: 0.9rem;
-  }
-  .dashboard--container .total--price {
-    font-size: 0.9rem;
-  }
-  .dashboard--container .price {
-    font-size: 0.8rem;
-  }
-}
-
 @media only screen and (max-width: 370px) {
   .dashboard--container .cart-item--image {
     height: 6rem;

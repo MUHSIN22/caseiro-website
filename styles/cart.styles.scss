@@ -307,58 +307,59 @@ html{
         }
     }
 }
-@media only screen and (max-width:460px) {
+// @media only screen and (max-width:460px) {
    
         
-        .dashboard--container{
-            padding: 2rem 0 0 0;
-        .cart--header{
-            border-radius: 0;
-            font-size: 0.9rem;
+//         .dashboard--container{
+//             padding: 2rem 0 0 0;
+//         .cart--header{
+//             border-radius: 0;
+//             font-size: 0.9rem;
 
-        }
-        .filter-date{
-            width: 7rem;
-            select{
-                font-size:0.7rem;
+//         }
+//         .filter-date{
+//             width: 7rem;
+//             select{
+//                 font-size:0.7rem;
                 
-            }
-        }
-        .cart-item{
-            margin: 0;
-            border-radius: 0;
-        }
-        .cart-item--image{
-            height: 7rem;
-        }
-        .cart-item--title{
-            font-size:1rem;
-        }
-        .price{
-            font-size: 0.9rem;
-        }
-        .quantity--wrapper{
-            padding: 0;
-        }
-        .qty--title{
-            font-size: 0.9rem;
-        }
-        .quantity{
-            margin: 0 0.2rem;
-        }
-        .delete--btn{
-            font-size:0.9rem;
-        }
-        .total--price{
-            font-size:0.9rem;
-        }
-        .price{
-            font-size: 0.8rem;
+//             }
+//         }
+//         .cart-item{
+//             margin: 0;
+//             border-radius: 0;
+//         }
+//         .cart-item--image{
+//             height: 7rem;
+//         }
+//         .cart-item--title{
+//             font-size:1rem;
+//         }
+//         .price{
+//             font-size: 0.9rem;
+//         }
+//         .quantity--wrapper{
+//             padding: 0;
+//         }
+//         .qty--title{
+//             font-size: 0.9rem;
+//         }
+//         .quantity{
+//             margin: 0 0.2rem;
+//         }
+//         .delete--btn{
+//             font-size:0.9rem;
+//         }
+//         .total--price{
+//             font-size:0.9rem;
+//         }
+//         .price{
+//             font-size: 0.8rem;
 
-        }
-    }
+//         }
+//     }
     
-}
+// }
+
 
 @media only screen and (max-width:370px) {
 
