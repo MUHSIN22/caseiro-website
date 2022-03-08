@@ -245,6 +245,7 @@ html {
 .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-reminder {
   color: #FF5D50;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-total-key {

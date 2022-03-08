@@ -1,10 +1,5 @@
-.btn-filter {
-  display: none;
-  opacity: 0;
-}
-
 .products-page-wrapper {
-      grid-template-areas: "cover cover" "filter products" "footer footer";
+      grid-template-areas: "cover cover" "filter products" "footer footer";
   -ms-grid-columns: 16rem auto;
       grid-template-columns: 16rem auto;
   -ms-grid-rows: auto auto auto;
@@ -12,6 +7,11 @@
   padding: 0 10%;
   height: auto;
   margin-bottom: 0;
+}
+
+.products-page-wrapper .landing-filter-button {
+  display: none;
+  cursor: pointer;
 }
 
 .products-page-wrapper .landing-cover {
@@ -253,14 +253,40 @@
 
 @media only screen and (max-width: 850px) {
   .products-page-wrapper {
-        grid-template-areas: "cover " "products";
+        grid-template-areas: "cover " "products";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+  }
+  .products-page-wrapper .landing-filter-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5rem;
+    font-size: 2rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
+    background: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    z-index: 1000;
+    display: block;
   }
   .products-page-wrapper .filter-container {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: products;
+    display: none;
+    position: fixed;
+    background: #Fff;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 2rem;
+    display: none;
+    opacity: 0;
+  }
+  .products-page-wrapper .filter-container .filter-header {
     display: none;
   }
   .products-page-wrapper .product-listing .product-card {

@@ -230,6 +230,7 @@ html {
 
 .dashboard--container .list-address {
   color: #c44786;
+  text-decoration: none;
 }
 
 .dashboard--container .coupon--title {

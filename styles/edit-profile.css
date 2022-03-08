@@ -73,7 +73,7 @@
 
 @media only screen and (max-width: 550px) {
   .profile-display--wrapper {
-        grid-template-areas: "title title" "edit edit" "fields fields" "password-btn password-btn" "password password" !important;
+        grid-template-areas: "title title" "edit edit" "fields fields" "password-btn password-btn" "password password" !important;
   }
   .profile-display--wrapper .profile-display--title {
     margin-top: 3rem;
