@@ -1,55 +1,12 @@
 .products-page-wrapper {
-      grid-template-areas: "crump crump" "cover cover" "filter products" "footer footer";
+      grid-template-areas: "cover cover" "filter products" "footer footer";
   -ms-grid-columns: 16rem auto;
       grid-template-columns: 16rem auto;
-  -ms-grid-rows: 1rem auto auto auto;
-      grid-template-rows: 1rem auto auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
   padding: 0 10%;
   height: auto;
   margin-bottom: 0;
-}
-
-.products-page-wrapper .bread-crump {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: crump;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.products-page-wrapper .bread-crump li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0.7;
-}
-
-.products-page-wrapper .bread-crump li::after {
-  content: '>';
-  margin: 0 1rem;
-}
-
-.products-page-wrapper .bread-crump li:last-child {
-  opacity: 1;
-}
-
-.products-page-wrapper .bread-crump li:last-child::after {
-  content: '';
 }
 
 .products-page-wrapper .landing-filter-button {
@@ -58,7 +15,7 @@
 }
 
 .products-page-wrapper .landing-cover {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: cover;
@@ -129,7 +86,7 @@
   background: #fff;
   margin-top: 1rem;
   border-radius: 10px;
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: filter;
   height: 41rem;
@@ -161,7 +118,7 @@
 
 .products-page-wrapper .product-listing {
   margin-top: 1rem;
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: products;
   background: #fff;
@@ -299,6 +256,9 @@
         grid-template-areas: "cover " "products";
     -ms-grid-columns: auto;
         grid-template-columns: auto;
+  }
+  .products-page-wrapper .bread-crump {
+    display: none;
   }
   .products-page-wrapper .landing-filter-button {
     position: fixed;

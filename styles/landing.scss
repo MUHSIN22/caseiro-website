@@ -1,41 +1,14 @@
 .products-page-wrapper {
-    grid-template-areas: "crump crump"
-        "cover cover"
+    grid-template-areas:  "cover cover"
         "filter products"
         "footer footer";
     grid-template-columns: 16rem auto;
-    grid-template-rows: 1rem auto auto auto;
+    grid-template-rows: auto auto auto;
     padding: 0 10%;
     height: auto;
     margin-bottom: 0;
 
-    .bread-crump {
-        grid-area: crump;
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: max-content;
 
-        li {
-            display: flex;
-            align-items: center;
-            opacity: 0.7;
-
-            &::after {
-                content: '>';
-                margin: 0 1rem;
-            }
-
-            &:last-child {
-                opacity: 1;
-
-                &::after {
-                    content: ''
-                }
-            }
-        }
-    }
 
     .landing-filter-button {
         display: none;
@@ -269,7 +242,9 @@
         grid-template-areas: "cover "
             "products";
         grid-template-columns: auto;
-
+    .bread-crump{
+        display: none;
+    }
         .landing-filter-button {
             position: fixed;
             bottom: 20px;
