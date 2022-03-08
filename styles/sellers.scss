@@ -105,6 +105,12 @@ $gradient-primary: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
         display: flex;
         flex-wrap: wrap;
     }
+    .btn-filter{
+        display: none;
+    }
+    .close-filter{
+        display: none;
+    }
     .seller-card{
         width: calc(100%/3 - 2rem);
         margin: 1rem;
@@ -174,6 +180,20 @@ $gradient-primary: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
         .bread-crump{
             display: none;
         }
+        .btn-filter{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 1rem;
+            font-size: 3rem;
+            background: $gradient-primary;
+            border-radius: 50%;
+            border: none;
+            color: #fff;
+            z-index: 1000;
+            display: block;
+            font-size: 1.6rem;
+        }
         .seller-banner{
             height: 15rem;
         }
@@ -181,8 +201,34 @@ $gradient-primary: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
             font-size: 1.2rem;
         }
         .seller--navigation-wrapper{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #fff;
+            z-index: 10000;
+            overflow-y: scroll;
             display: none;
+            opacity: 0;
         }
+        .close-filter{
+            margin: 1rem;
+            display: block;
+        }
+        .nav--title{
+            padding: 0;
+            padding-bottom: 1rem;
+            text-align: left;
+        }
+        .nav-divider{
+            margin: 1rem 0;
+            opacity: 0.5;
+        }
+        .seller--navigation{
+            box-shadow: none;
+        }
+
         .sellers-card--wrapper{
             justify-content: space-between;
         }
@@ -208,6 +254,14 @@ $gradient-primary: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
         }
         .category{
             width: 1rem;
+        }
+        .nav--title{
+            font-size: 1rem;
+        }
+        .filter{
+            span{
+                font-size: 14px;
+            }
         }
         .category-wrapper{
             width: 1.3rem;

@@ -249,6 +249,12 @@ const openFilter = () => {
     $(".filter-navigation").css({display: "block"})
     $(".filter-navigation").animate({opacity:1},300)
 }
+
+const openSellerFilter = () => {
+    $(".seller--navigation-wrapper").css({display: "block"})
+    $(".seller--navigation-wrapper").animate({opacity:1},300)
+}
+
 const orderFilter = () =>{
     $(".filter-container").css({display: "block"})
     $(".filter-container").animate({opacity:1},300)
@@ -257,6 +263,11 @@ const orderFilter = () =>{
 const closeFilter = () => {
     $(".filter-navigation").animate({opacity:0},300,() => {
         $(".filter-navigation").css({display: "none"})
+    })
+}
+const closeSellerFilter = () => {
+    $(".seller--navigation-wrapper").animate({opacity:0},300,() => {
+        $(".seller--navigation-wrapper").css({display: "none"})
     })
 }
 

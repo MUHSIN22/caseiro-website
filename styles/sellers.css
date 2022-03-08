@@ -146,6 +146,14 @@
       flex-wrap: wrap;
 }
 
+.seller--page .btn-filter {
+  display: none;
+}
+
+.seller--page .close-filter {
+  display: none;
+}
+
 .seller--page .seller-card {
   width: calc(100%/3 - 2rem);
   margin: 1rem;
@@ -237,6 +245,21 @@
   .seller--page .bread-crump {
     display: none;
   }
+  .seller--page .btn-filter {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem;
+    font-size: 3rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
+    background: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    z-index: 1000;
+    display: block;
+    font-size: 1.6rem;
+  }
   .seller--page .seller-banner {
     height: 15rem;
   }
@@ -244,7 +267,33 @@
     font-size: 1.2rem;
   }
   .seller--page .seller--navigation-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 10000;
+    overflow-y: scroll;
     display: none;
+    opacity: 0;
+  }
+  .seller--page .close-filter {
+    margin: 1rem;
+    display: block;
+  }
+  .seller--page .nav--title {
+    padding: 0;
+    padding-bottom: 1rem;
+    text-align: left;
+  }
+  .seller--page .nav-divider {
+    margin: 1rem 0;
+    opacity: 0.5;
+  }
+  .seller--page .seller--navigation {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .seller--page .sellers-card--wrapper {
     -webkit-box-pack: justify;
@@ -272,6 +321,12 @@
   }
   .seller--page .category {
     width: 1rem;
+  }
+  .seller--page .nav--title {
+    font-size: 1rem;
+  }
+  .seller--page .filter span {
+    font-size: 14px;
   }
   .seller--page .category-wrapper {
     width: 1.3rem;
