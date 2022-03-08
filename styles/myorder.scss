@@ -25,18 +25,19 @@ html{
     color: $black;
 }
 
-.dashboard--container{
-    .mobile-filter-button{
-        display: none;
-    }
+
+.order-container{
     padding: 10rem 12%;
     background: $main-bg;
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 1fr 5fr;
     grid-gap: 2rem;
-    grid-template-areas: 'crump crump''content bill';
+    grid-template-areas: 'crump crump''filter content';
     border-bottom: 1px solid $gray;
-
+    .mobile-filter-button{
+        display: none;
+        cursor: pointer;
+    }
     .bread-crump{
         grid-area: crump;
         list-style: none;
@@ -60,7 +61,8 @@ html{
             }
         }
     }
-
+.dashboard--container{
+ 
     .cart-content {
         grid-area: content;
     }
@@ -69,6 +71,8 @@ html{
         border-radius: 10px;
         background: #fff;
         padding: 1rem;
+        display: flex;
+        justify-content:space-between;
     }
     .cart--title{
         font-weight: 500;
@@ -140,95 +144,86 @@ html{
             color: $light-pink;
         }
     }
+}
 
-    .bill-container{
-        grid-area: bill;
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 1rem;
-        height: max-content;
-    }
-    .line-break{
-        margin: 1rem 0;
-        color: $gray;
-    }
-    .bill-list--wrapper{
-        display: flex;
-        justify-content: space-between;
-        margin: 1rem 0;
-    }
-    .list-title{
-        color: rgb(53, 53, 53);
-    }
-    .list-price{
-        color: #009217;
-    }
-    .list-address{
-        color: $light-pink;
-    }
-    .coupon--title{
-        font-size: 1.1rem;
-        text-transform: uppercase;
-    }
-    .coupon-input--wrapper{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        border: 1px solid #000;
-        border-radius: 6px;
-        border-right: none;
-        margin: 0.5rem 0;
-    }
-    .coupon-input{
-        font-size: 1rem;
-        flex: 1;
-        border: none;
-        margin: 0.5rem;
-    }
-    .btn-apply-coupon{
-        background: $light-orange;
-        border-radius: 6px;
-        height: 2.2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #Fff;
+.filter-date {
+    display: flex;
+    padding-left: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background: #EEEEEE;
+    width: 8rem;
+    height: 2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding-right: 0.5rem;
+
+    select {
         cursor: pointer;
-        padding: 0 0.5rem;
-    }
-    .list-total{
-        font-size: 1.1rem;
-    }
-    .btn-wrapper{
-        display: flex;
-        justify-content: flex-end;
-    }
-    .btn-place-order{
-        background-color: $light-orange;
-        padding: 0.5rem 1rem;
-        border-radius: 6px;
         border: none;
-        color: #fff;
         font-weight: 600;
-        text-align: right;
-        cursor: pointer;
+        background: none;
     }
 
-}
+    option {
+        background: #EEEEEE;
 
-@media only screen and (max-width: 1360px) {
-    .dashboard--container{
-        padding: 8rem 5%;
+    }
+}
+.filter-container {
+    cursor: pointer;
+    grid-area: filter;
+    background: #fff;
+    width: 13rem;
+    height: max-content;
+    border-radius: 10px;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    
+}
+.nav-header{
+    display: none;
+    cursor: pointer;
+}
+.filter-header {
+    padding: 1rem;
+
+    h3 {
+        border-bottom: 1px solid #00000033;
+        padding-bottom: 1rem;
     }
 }
 
-@media only screen and (max-width: 1110px){
-    .dashboard--container{
-        padding: 8rem 1rem;
+.filter-content {
+    .filter-items {
+        display: flex;
+        padding: 0.4rem 8%;
+
+        p {
+            font-weight: 600;
+            color: #000000;
+            margin-left: 1rem;
+        }
     }
 }
-@media only screen and (max-width: 850px){
-    .dashboard--container{
+.btn-filter {
+    display: none !important;
+}
+}
+
+
+@media only screen and (max-width:1370px){
+    .order-container{
+        padding: 10rem 5%;
+    }
+    
+}
+@media only screen and (max-width:850px) {
+    
+    .order-container{
+        padding: 5rem 1rem;
+        grid-template-areas: 'content''bill';
+        grid-template-columns: 1fr;
         .mobile-filter-button {
             position: fixed;
             bottom: 20px;
@@ -243,75 +238,47 @@ html{
             z-index: 1000;
             display: block;
           }
-        padding: 5rem 1rem;
-        grid-template-areas: 'content''bill';
-        grid-template-columns: 1fr;
         .bread-crump{
             display: none;
         }
-    }
-}
-@media only screen and (max-width: px) {
-    .dashboard--container{
-        padding: 5rem 0.5rem;
-        grid-gap: 1rem;
-        .cart--title{
-            font-size: 1.2rem;
-        }
-        .cart-item{
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-        }
-        .cart-item--title{
-            font-size: 1rem;
-            font-weight: 600;
-        }
-        .qty--title{
-            font-size: 0.9rem;
-        }
-        .quantity--changer{
-            font-size: 1.1rem;
-        }
-        .quantity--wrapper{
-            font-size: 0.8rem;
-        }
-        .price{
-            font-size: 0.9rem;
-        }
-        .delete-and-total--wrapper{
-            flex-direction: column-reverse;
-            align-items: flex-start;
-        }
-        .cart-item--image{
-            width: 5rem;
-            height: 5rem;
-            object-fit: cover;
-            .delete--btn{
-                margin-top: 0.5rem;
-            }
-        }
-        .list-title{
-            font-size: 0.9rem;
-        }
-        .list-price{
-            font-size: 0.9rem;
-        }
-        .coupon--title{
-            font-size: 1rem;
-        }
-        .coupon--description{
-            font-size: 0.8rem;
-        }
-        .coupon-input{
-            font-size: 1rem;
-        }
-    }
-}
-@media only screen and (max-width:460px) {
-   
+        .filter-container{  
+            display: none;
+                position: fixed;
+                background: #Fff;
+                z-index: 100000;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding-top: 4rem;
+                display: none;
+                opacity: 0;
         
+        }
+        .filter-container{
+          
+        .filter-items{
+            padding: 0.4rem 3%;
+        }
+    }
+    .nav-header{
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        background: #fff;
+        i{
+            cursor: pointer;
+        }
+    }
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .order-container{
+        padding: 4rem 0 0 0;
         .dashboard--container{
-            padding: 2rem 0 0 0;
         .cart--header{
             border-radius: 0;
             font-size: 0.9rem;
@@ -357,11 +324,11 @@ html{
 
         }
     }
-    
+    }
 }
 
 @media only screen and (max-width:370px) {
-
+    .order-container{
         .dashboard--container{
             .cart-item--image{
                 height: 6rem;
@@ -382,4 +349,5 @@ html{
                 padding: 1px 0.4rem;
             }
         }
+    }
 }
