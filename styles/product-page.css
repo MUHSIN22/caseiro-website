@@ -6,15 +6,59 @@
 .product-display-container .product-display-wrapper {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "product about";
+      grid-template-areas: "crump crump" "product about";
   -ms-grid-columns: 1.5fr 2.5fr;
       grid-template-columns: 1.5fr 2.5fr;
   width: 100%;
   border-radius: 10px;
 }
 
-.product-display-container .product-display-wrapper .display-container {
+.product-display-container .product-display-wrapper .bread-crump {
+  margin-bottom: 1rem;
   -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: crump;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.product-display-container .product-display-wrapper .bread-crump li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.7;
+}
+
+.product-display-container .product-display-wrapper .bread-crump li::after {
+  content: '>';
+  margin: 0 1rem;
+}
+
+.product-display-container .product-display-wrapper .bread-crump li:last-child {
+  opacity: 1;
+}
+
+.product-display-container .product-display-wrapper .bread-crump li:last-child::after {
+  content: '';
+}
+
+.product-display-container .product-display-wrapper .display-container {
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: product;
   background: #fff;
@@ -102,7 +146,7 @@
 }
 
 .product-display-container .product-display-wrapper .product-description-container {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: about;
   margin-left: 1rem;
@@ -229,6 +273,9 @@
         grid-template-areas: "product" "about";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .product-display-container .product-display-wrapper .bread-crump {
+    display: none;
   }
   .product-display-container .product-display-wrapper .product-description-container {
     margin: 0;

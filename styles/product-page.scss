@@ -4,11 +4,35 @@
 
     .product-display-wrapper {
         display:grid;
-        grid-template-areas: "product about";
+        grid-template-areas: "crump crump"
+                             "product about";
         grid-template-columns: 1.5fr 2.5fr;
         width: 100%;
         border-radius: 10px;
-
+        .bread-crump{
+            margin-bottom: 1rem;
+            grid-area: crump;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: max-content;
+            li{
+                display: flex;
+                align-items: center;
+                opacity: 0.7;
+                &::after{
+                    content: '>';
+                    margin: 0 1rem ;
+                }
+                &:last-child{
+                    opacity: 1;
+                    &::after{
+                        content: ''
+                    }
+                }
+            }
+        }
         .display-container {
             grid-area: product ;
             background: #fff;
@@ -223,6 +247,9 @@
         .product-display-wrapper{
             grid-template-areas: 'product''about';
             grid-template-columns: 1fr;
+            .bread-crump{
+                display: none;
+            }
             .product-description-container{
                 margin: 0;
                 margin-top: 1rem;
