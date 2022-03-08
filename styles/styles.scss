@@ -69,6 +69,10 @@ header{
         text-transform: uppercase;
         margin: 0 1rem;
         cursor: pointer;
+        a{
+            text-decoration: none;
+            color: #0c0c0c;
+        }
     }
     .category--active{
         background-color: red;

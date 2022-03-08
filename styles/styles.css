@@ -80,6 +80,11 @@ header .category {
   cursor: pointer;
 }
 
+header .category a {
+  text-decoration: none;
+  color: #0c0c0c;
+}
+
 header .category--active {
   background-color: red;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));

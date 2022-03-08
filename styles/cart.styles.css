@@ -30,10 +30,6 @@ html {
   border-bottom: 1px solid #8d8d8d;
 }
 
-.dashboard--container .mobile-filter-button {
-  display: none;
-}
-
 .dashboard--container .bread-crump {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -325,26 +321,12 @@ html {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .dashboard--container .mobile-filter-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 0.5rem;
-    font-size: 2rem;
-    background: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
-    background: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
-    border-radius: 50%;
-    border: none;
-    color: #fff;
-    z-index: 1000;
-    display: block;
-  }
   .dashboard--container .bread-crump {
     display: none;
   }
 }
 
-@media only screen and (max-width: px) {
+@media only screen and (max-width: 600px) {
   .dashboard--container {
     padding: 5rem 0.5rem;
     grid-gap: 1rem;
@@ -404,27 +386,6 @@ html {
   }
   .dashboard--container .coupon-input {
     font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 370px) {
-  .dashboard--container .cart-item--image {
-    height: 6rem;
-  }
-  .dashboard--container .cart-item--title {
-    font-size: 0.9rem;
-  }
-  .dashboard--container .cart--heading {
-    font-size: 1.1rem;
-  }
-  .dashboard--container .price {
-    font-size: 0.7rem;
-  }
-  .dashboard--container .quantity--changer {
-    font-size: 1rem;
-  }
-  .dashboard--container .quantity {
-    padding: 1px 0.4rem;
   }
 }
 /*# sourceMappingURL=cart.styles.css.map */

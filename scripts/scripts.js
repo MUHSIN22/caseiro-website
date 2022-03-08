@@ -323,3 +323,11 @@ const productSelect=(event,index)=>{
     $(".slide").css({"border-color":"#C4C4C4"})
     $(".slide").eq(index-1).css({'border-color':"red"})
 }
+
+
+
+
+const cartPlaceOrder = () => {
+    $(window).location.href = "/products.html"
+    console.log("Jere");
+}
