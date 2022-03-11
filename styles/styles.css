@@ -385,6 +385,7 @@ header .mobile-menu__active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .category-shopping .category-shopping--title {

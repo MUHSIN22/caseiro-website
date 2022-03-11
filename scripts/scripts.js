@@ -345,3 +345,6 @@ const cartPlaceOrder = () => {
 const goToSellerPage = () => {
     window.location.href = "landing.html"
 }
+const gotoSellers = () => {
+    window.location.href = "sellers.html"
+}
