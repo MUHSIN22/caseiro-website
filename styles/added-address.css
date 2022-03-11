@@ -1,8 +1,3 @@
-.dashboard--container {
-  -ms-grid-rows: none !important;
-      grid-template-rows: none !important;
-}
-
 .manage-address--title {
   color: #0038A5;
 }
@@ -165,18 +160,7 @@
   font-size: 0.9rem;
 }
 
-@media only screen and (max-width: 800px) {
-  .dashboard--container {
-    -ms-grid-rows: 1fr 1.8fr !important;
-        grid-template-rows: 1fr 1.8fr !important;
-  }
-}
-
 @media only screen and (max-width: 550px) {
-  .dashboard--container {
-    -ms-grid-rows: 1fr 1fr !important;
-        grid-template-rows: 1fr 1fr !important;
-  }
   .manage-address-wrapper .manage-address-card {
     margin-bottom: 0 !important;
     padding: 1rem !important;
