@@ -1,9 +1,8 @@
 .dashboard--container {
-    grid-template-rows: 0.5fr 1fr;
     border: none!important;
+
 .manage-address-wrapper {
     width: 100%;
-    height: 10rem;
 
     .card-active {
         height: 7rem;
@@ -207,9 +206,7 @@
 }
 
 @media only screen and (max-width:800px) {
-    .dashboard--container {
-        grid-template-rows: 1fr 5.5fr;
-    }
+  
 
     .checkout-input-container {
         margin: 0rem 0 2rem 0;
@@ -262,7 +259,7 @@
 
 @media only screen and (max-width:550px) {
     .dashboard--container {
-        grid-template-rows: 1fr 4fr;
+     
     
 
     .manage-address-wrapper {
