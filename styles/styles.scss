@@ -306,6 +306,13 @@ header{
         flex-direction: column;
         align-items: center;
         cursor: pointer;
+        border: 2px solid transparent;
+        border-radius: 10px;
+        padding: 1rem;
+        transition: all 0.3s ease;
+        &:hover{
+            border-color: $light-pink;
+        }
     }
     .category-shopping--title{
         font-size: 3rem;

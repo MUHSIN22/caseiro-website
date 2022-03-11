@@ -386,6 +386,15 @@ header .mobile-menu__active {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.category-shopping .category-shopping--category:hover {
+  border-color: #c44786;
 }
 
 .category-shopping .category-shopping--title {
