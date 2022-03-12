@@ -20,7 +20,7 @@
         margin-top: 7rem;
         display: flex;
         background: #fff;
-        height: 35rem;
+        height: max-content;
         padding: 1rem 1rem 0 1rem;
         border-radius: 10px;
 
@@ -77,7 +77,7 @@
         margin-top: 1rem;
         border-radius: 10px;
         grid-area: filter;
-        height: 41rem;
+        height: max-content;
 
         .filter-header {
             background: linear-gradient(180deg, #FF5D50 0%, #DE388D 100%);
@@ -222,8 +222,6 @@
 @media only screen and (max-width:922px) {
     .products-page-wrapper {
         .landing-cover {
-            height: 31rem;
-
             .main-cover {
                 .banner {
                     height: 21rem;
@@ -324,8 +322,6 @@
         background: #fff;
 
         .landing-cover {
-            height: 25rem;
-
             .main-cover {
                 .banner {
                     height: 15rem;
@@ -393,7 +389,6 @@
     .products-page-wrapper {
         .landing-cover {
             padding: 0;
-            height: 21rem;
 
             .main-cover {
                 .banner {
@@ -423,7 +418,6 @@
 @media only screen and (max-width:390px) {
     .products-page-wrapper {
         .landing-cover {
-            height: 19rem;
 
             .main-cover {
                 .banner {

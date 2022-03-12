@@ -24,7 +24,9 @@
   display: -ms-flexbox;
   display: flex;
   background: #fff;
-  height: 35rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   padding: 1rem 1rem 0 1rem;
   border-radius: 10px;
 }
@@ -89,7 +91,9 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: filter;
-  height: 41rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .products-page-wrapper .filter-container .filter-header {
@@ -248,9 +252,6 @@
 }
 
 @media only screen and (max-width: 922px) {
-  .products-page-wrapper .landing-cover {
-    height: 31rem;
-  }
   .products-page-wrapper .landing-cover .main-cover .banner {
     height: 21rem;
   }
@@ -329,9 +330,6 @@
   .products-page-wrapper {
     background: #fff;
   }
-  .products-page-wrapper .landing-cover {
-    height: 25rem;
-  }
   .products-page-wrapper .landing-cover .main-cover .banner {
     height: 15rem;
   }
@@ -376,7 +374,6 @@
 @media only screen and (max-width: 430px) {
   .products-page-wrapper .landing-cover {
     padding: 0;
-    height: 21rem;
   }
   .products-page-wrapper .landing-cover .main-cover .banner {
     height: 13rem;
@@ -394,9 +391,6 @@
 }
 
 @media only screen and (max-width: 390px) {
-  .products-page-wrapper .landing-cover {
-    height: 19rem;
-  }
   .products-page-wrapper .landing-cover .main-cover .banner {
     height: 11rem;
   }
