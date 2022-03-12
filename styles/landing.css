@@ -89,7 +89,9 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: filter;
-  height: 41rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .products-page-wrapper .filter-container .filter-header {

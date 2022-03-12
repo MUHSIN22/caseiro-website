@@ -77,7 +77,7 @@
         margin-top: 1rem;
         border-radius: 10px;
         grid-area: filter;
-        height: 41rem;
+        height: max-content;
 
         .filter-header {
             background: linear-gradient(180deg, #FF5D50 0%, #DE388D 100%);
