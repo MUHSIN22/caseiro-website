@@ -7,11 +7,12 @@ let slideInterval;
 
 $(document).ready(() => {
     slideInterval = setInterval(autoSlider,5000);
-    bannerDotClickSlider();
     productDotClickSlider();
     bannerDragSlider();
     addToWishlist();
     setBannerWidth();
+    bannerDotClickSlider();
+
 
     if($(window).innerWidth() <= 768){
         productTouchSlider();
@@ -22,7 +23,12 @@ const setBannerWidth = () => {
     let carousel = $(".carousel")
     homeBannerLength = carousel[0].children.length
     carousel.css("width",`${homeBannerLength*100}%`)
-    // $(".carousel--item").css("width",`${100/homeBannerLength}%`)
+    for(let i=0;i<homeBannerLength;i++){
+        i == 0 ? 
+            $(".dots").append("<li class='dot dot__active'></li>")
+            : $(".dots").append("<li class='dot'></li>")
+             
+    }
 }
 
 // Banner slide functions
