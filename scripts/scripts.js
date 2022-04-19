@@ -1,5 +1,6 @@
 let bannerSlideIndex = 0,
-    homeProductSlideActive = 0;
+    homeProductSlideActive = 0,
+    homeBannerLength=0;
 // For product mobile slide
 let posX1,posX2;
 let slideInterval;
@@ -10,15 +11,23 @@ $(document).ready(() => {
     productDotClickSlider();
     bannerDragSlider();
     addToWishlist();
-    
+    setBannerWidth();
+
     if($(window).innerWidth() <= 768){
         productTouchSlider();
     }
 })
 
+const setBannerWidth = () => {
+    let carousel = $(".carousel")
+    homeBannerLength = carousel[0].children.length
+    carousel.css("width",`${homeBannerLength*100}%`)
+    // $(".carousel--item").css("width",`${100/homeBannerLength}%`)
+}
+
 // Banner slide functions
 const autoSlider = () => {
-    if( bannerSlideIndex === 2){
+    if( bannerSlideIndex === homeBannerLength-1){
         direction = 'backward'
     }else if( bannerSlideIndex === 0){
         direction = 'forward'
@@ -70,14 +79,11 @@ const bannerDragSlider = () => {
         posX2 = touch.pageX 
         bannerSliderController(pos1,pos2)
     })
-
-
-    
 }
 
 const bannerSliderController = (pos1,pos2) => {
     if(pos1 > pos2 && pos1 - pos2 > 100){
-        if( bannerSlideIndex !== 2){
+        if( bannerSlideIndex !== homeBannerLength-1){
             bannerSlideIndex++;
         }
     }else if(pos2 > pos1 && pos2 - pos1 > 100){

@@ -201,11 +201,10 @@ header .mobile-menu__active {
 }
 
 .landing .carousel {
-  width: 300%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
   -webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
   cursor: -webkit-grab;
@@ -220,7 +219,6 @@ header .mobile-menu__active {
   background-image: url("/assets/images/caseiro banner 1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: calc(100% / 3);
   height: 100%;
   padding: 0 clamp(1rem, 12%, 15rem);
   color: #fff;
