@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
-    <title>Caseiro</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Caseiro</title>
 </head>
 <body>
     <header>
@@ -527,7 +529,7 @@
 			<div class="product--slider-wrapper">
 				<i class="forward-navigation material-icons-outlined" onclick="slideHomeProducts('forward')">arrow_forward_ios</i>
 				<i class="backward-navigation material-icons-outlined" onclick="slideHomeProducts('back')">arrow_back_ios</i>
-				<div class="products--slider">
+				<div class="owl-carousel">
 					<div class="product--card">
 						<div class="card--image-wrapper">
 							<img onclick="openModal()" class="product--image" src="assets/images/ck.jpg" alt="">
@@ -723,11 +725,11 @@
 					</div>
 				</div>
 			</div>
-			<ul class="product--dots">
+			<!-- <ul class="product--dots">
                 <li class="product--dot product--dot__active"></li>
                 <li class="product--dot"></li>
                 <li class="product--dot"></li>
-            </ul>
+            </ul> -->
 		</section>
     </main>
 
@@ -853,6 +855,7 @@
 		</p>
 	</footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="scripts/scripts.js"></script>
 </html>

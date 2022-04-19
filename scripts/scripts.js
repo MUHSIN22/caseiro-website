@@ -13,6 +13,19 @@ $(document).ready(() => {
     setBannerWidth();
     bannerDotClickSlider();
 
+    $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:2
+            },
+            768:{
+                items:4
+            }
+        }
+    })
 
     if($(window).innerWidth() <= 768){
         productTouchSlider();
@@ -107,26 +120,14 @@ const bannerSliderController = (pos1,pos2) => {
 
 // home product slide
 const slideHomeProducts = (direction) =>{
-    let timeout;
-    if($(window).innerWidth() <= 768){
-        timeout = 300
-    }else{
-        timeout = 600
+    var owl = $('.owl-carousel');
+    owl.owlCarousel();
+
+    if(direction === 'forward'){
+        owl.trigger('next.owl.carousel');
+    }else if(direction === 'back'){
+        owl.trigger('prev.owl.carousel');
     }
-
-    if(direction === 'forward' && homeProductSlideActive<2){
-        homeProductSlideActive++; 
-    }else if(direction === 'back' && homeProductSlideActive > 0){
-        homeProductSlideActive--;
-    }
-
-    setNavigationButton();
-
-    $('.products--slider').css("margin-left",`-${homeProductSlideActive*100}%`)
-    setTimeout(() => {
-        $(".product--dot__active").removeClass("product--dot__active")
-        $(".product--dot").eq(homeProductSlideActive).addClass("product--dot__active");
-    },timeout)
 }
 
 const productDotClickSlider = () => {
