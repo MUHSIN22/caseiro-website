@@ -886,7 +886,8 @@ footer .footer--link {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: image;
-  max-width: 100%;
+  width: 13rem;
+  height: 17rem;
 }
 
 .modal-wrapper .modal--title {
@@ -2070,6 +2071,10 @@ footer .footer--link {
         grid-template-columns: 1fr 1fr;
     padding: 2rem 1rem;
     grid-gap: 1rem;
+  }
+  .modal-wrapper .modal--product-image {
+    width: 9rem;
+    height: 12rem;
   }
   .modal-wrapper .stock-status-wrapper {
     margin-top: 1rem;

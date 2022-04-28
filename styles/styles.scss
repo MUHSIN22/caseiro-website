@@ -690,7 +690,9 @@ footer{
     .modal--product-image{
         object-fit: cover;
         grid-area: image;
-        max-width: 100%;
+        // max-width: 100%;
+        width: 13rem;
+        height: 17rem;
     }
     .modal--title{
         font-weight: 500;
@@ -1816,6 +1818,10 @@ footer{
             grid-template-columns: 1fr 1fr;
             padding: 2rem 1rem;
             grid-gap: 1rem;
+        }
+        .modal--product-image{
+            width: 9rem;
+            height: 12rem;
         }
         .stock-status-wrapper{
             margin-top: 1rem;

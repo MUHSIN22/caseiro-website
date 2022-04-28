@@ -39,6 +39,10 @@
   border-radius: 10px;
   height: 26rem;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .products-page-wrapper .landing-cover .main-cover .cover-bottom {

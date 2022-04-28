@@ -74,7 +74,7 @@
 
 .seller--page .seller-banner {
   width: 100%;
-  height: 30rem;
+  height: clamp(50vh, 30rem, 30rem);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

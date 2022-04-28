@@ -54,7 +54,7 @@ $gradient-primary: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
     }
     .seller-banner{
         width: 100%;
-        height: 30rem;
+        height: clamp(50vh,30rem,30rem);
         object-fit: cover;
         object-position: center;
     }
