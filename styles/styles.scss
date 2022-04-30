@@ -672,6 +672,24 @@ footer{
     opacity: 0;
     display: none;
 
+    .size-wrapper{
+        label{
+            display: block;
+            margin: 1rem 0;
+        }
+        .btn-size{
+            font-weight: 600;
+            background: transparent;
+            border: 2px solid rgba(0,0,0,0.2);
+            padding: 0.5rem;
+            cursor: pointer;
+            margin: 3px 0;
+        }
+        .btn-size-active{
+            border-color: #F14D6A;
+        }
+    }
+
     .modal-container{
         // transform: scale(0);
         width: clamp(20rem,70%,60rem);

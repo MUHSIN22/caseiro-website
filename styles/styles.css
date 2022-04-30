@@ -860,6 +860,24 @@ footer .footer--link {
   display: none;
 }
 
+.modal-wrapper .size-wrapper label {
+  display: block;
+  margin: 1rem 0;
+}
+
+.modal-wrapper .size-wrapper .btn-size {
+  font-weight: 600;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: 3px 0;
+}
+
+.modal-wrapper .size-wrapper .btn-size-active {
+  border-color: #F14D6A;
+}
+
 .modal-wrapper .modal-container {
   width: clamp(20rem, 70%, 60rem);
   background: #fff;

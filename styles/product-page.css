@@ -57,6 +57,45 @@
   content: '';
 }
 
+.product-display-container .product-display-wrapper .size-wrapper label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.product-display-container .product-display-wrapper .size-wrapper .btn-size {
+  font-weight: 600;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: 3px 0;
+}
+
+.product-display-container .product-display-wrapper .size-wrapper .btn-size-active {
+  border-color: #F14D6A;
+}
+
+.product-display-container .product-display-wrapper .colors-wrapper {
+  margin: 2rem 0;
+}
+
+.product-display-container .product-display-wrapper .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.product-display-container .product-display-wrapper .color {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
 .product-display-container .product-display-wrapper .display-container {
   -ms-grid-row: 2;
   -ms-grid-column: 1;

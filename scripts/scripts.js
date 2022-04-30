@@ -12,7 +12,7 @@ $(document).ready(() => {
     addToWishlist();
     setBannerWidth();
     bannerDotClickSlider();
-
+    
     $(".owl-carousel").owlCarousel({
         loop:true,
         margin:10,
@@ -360,4 +360,11 @@ const goToSellerPage = () => {
 }
 const gotoSellers = () => {
     window.location.href = "sellers.html"
+}
+
+
+// Size btn click handler
+sizeClickHandler = (event) => {
+    $(".btn-size-active").removeClass("btn-size-active")
+    event.target.classList.add("btn-size-active")
 }

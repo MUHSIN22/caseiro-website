@@ -1,5 +1,5 @@
 .products-page-wrapper {
-      grid-template-areas: "cover cover" "filter products" "footer footer";
+      grid-template-areas: "cover cover" "filter sort" "filter products" "footer footer";
   -ms-grid-columns: 16rem auto;
       grid-template-columns: 16rem auto;
   -ms-grid-rows: auto auto auto;
@@ -12,6 +12,20 @@
 .products-page-wrapper .landing-filter-button {
   display: none;
   cursor: pointer;
+}
+
+.products-page-wrapper #sort {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  justify-self: flex-end;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: #fff;
+  font-weight: 500;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: sort;
 }
 
 .products-page-wrapper .landing-cover {
@@ -90,9 +104,9 @@
 
 .products-page-wrapper .filter-container {
   background: #fff;
-  margin-top: 1rem;
   border-radius: 10px;
   -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: filter;
   height: -webkit-max-content;
@@ -125,9 +139,8 @@
 }
 
 .products-page-wrapper .product-listing {
-  margin-top: 1rem;
   padding-top: 1rem;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: products;
   background: #fff;

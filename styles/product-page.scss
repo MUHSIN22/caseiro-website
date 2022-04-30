@@ -1,3 +1,5 @@
+$light-pink:#c44786;
+
 .product-display-container {
     background-color: #E5E5E5;
     padding: 8rem 12%;
@@ -33,6 +35,42 @@
                 }
             }
         }
+        .size-wrapper{
+            label{
+                display: block;
+                margin-bottom: 1rem;
+            }
+            .btn-size{
+                font-weight: 600;
+                background: transparent;
+                border: 2px solid rgba(0,0,0,0.2);
+                padding: 0.5rem;
+                cursor: pointer;
+                margin: 3px 0;
+            }
+            .btn-size-active{
+                border-color: #F14D6A;
+            }
+        }
+
+        .colors-wrapper{
+            margin: 2rem 0;
+        }
+        .colors{
+            display: flex;
+            list-style: none;
+        }
+        .color{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            border: 1px solid rgba(0,0,0,0.6);
+            // background: $light-pink;
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+        }
+
         .display-container {
             grid-area: product ;
             background: #fff;

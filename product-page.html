@@ -111,7 +111,9 @@
                     <span onclick="romanticmode(event)" class="material-icons-outlined wishlist">
                         favorite_border
                         </span>
-                    <img class="main-image"src="/assets//images/shoe.png" alt="">
+                    <div class="zoom-box">
+                        <img class="main-image" id="myimage" src="/assets/images/shoe.png" data-zoom-image="/assets/images/shoe.png" alt="">
+                    </div>
                     <div class="slider-container">
                     <div class="display-slider">
                         <img class="slide" onclick="productSelect(event,1);" src="/assets//images/shoe.png" alt="">
@@ -150,9 +152,28 @@
                             <strong class="price">AED 429</strong>
                             <p class="discount">AED 603</p>
                         </div>
-                        <select class="size" id="">
+                        <!-- <select class="size" id="">
                             <option value="">Size name</option>
-                        </select>
+                        </select> -->
+                        <div class="size-wrapper">
+                            <label for="size">Select Size</label>
+                            <button class="btn btn-size btn-size-active" onclick="sizeClickHandler(event)">XS</button>
+                            <button class="btn btn-size" onclick="sizeClickHandler(event)">S</button>
+                            <button class="btn btn-size" onclick="sizeClickHandler(event)">L</button>
+                            <button class="btn btn-size" onclick="sizeClickHandler(event)">XL</button>
+                            <button class="btn btn-size" onclick="sizeClickHandler(event)">XXL</button>
+                            <button class="btn btn-size" onclick="sizeClickHandler(event)">XXXL</button>
+                        </div>
+
+                        <div class="colors-wrapper">
+                            <h4 class="modal--title">Colors<h4/>
+                            <ul class="colors">
+                                <li class="color" style="background-color: blue;"></li>
+                                <li class="color" style="background-color: red;"></li>
+                                <li class="color" style="background-color: blueviolet;"></li>
+                            </ul>
+                        </div>
+                        
                         <div class="product-quantity">
                             <strong>Qty:</strong>
                             <span class="material-icons-outlined">remove</span>
@@ -260,5 +281,4 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
 <script src="scripts/scripts.js"></script>
-
 </html>
