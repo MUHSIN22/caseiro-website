@@ -823,7 +823,9 @@ footer{
     border-bottom: 1px solid $gray;
     display: grid;
     height: 100vh;
-    grid-template-areas: 'crump crump''nav products';
+    grid-template-areas: 'crump crump'
+                         'nav sort'
+                         'nav products';
     grid-template-columns: 15rem auto;
     grid-gap: 2rem;
     .bread-crump{
@@ -858,6 +860,18 @@ footer{
     .nav-header{
         display: none;
     }
+    
+    #sort{
+        width: max-content;
+        justify-self: flex-end;
+        padding: 0.5rem;
+        border-radius: 5px;
+        background: #fff;
+        font-weight: 500;
+        grid-area: sort;
+        margin-right: 1rem;
+    }
+
     .filter-wrapper{
         padding: 1rem;
         border-bottom: 1.5px solid rgba(155, 136, 136, 0.4);

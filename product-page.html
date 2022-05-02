@@ -107,7 +107,7 @@
                         <!-- product image displaying container -->
             <div class="display-container">
                 
-                <div class="display-content">
+                <div class="display-content" onmouseout="hidePreview()">
                     <span onclick="romanticmode(event)" class="material-icons-outlined wishlist">
                         favorite_border
                         </span>
@@ -121,6 +121,9 @@
                         <img class="slide" onclick="productSelect(event,3)" src="/assets//images/ss.jpg" alt="">
                         <img class="slide" onclick="productSelect(event,4)" src="/assets//images/ssss.jpg" alt="">
                         <img class="slide" onclick="productSelect(event,5)" src="/assets//images/ff.jpg " alt="">
+                    </div>
+                    <div id="myresult" class="image-preview">
+                        <!-- <img src="" alt=""> -->
                     </div>
                     <div class="display-button-container">
                         <button class="cart">Add to Cart</button>

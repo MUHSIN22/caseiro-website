@@ -1035,7 +1035,7 @@ footer .footer--link {
   display: -ms-grid;
   display: grid;
   height: 100vh;
-      grid-template-areas: "crump crump" "nav products";
+      grid-template-areas: 'crump crump' 'nav sort' 'nav products';
   -ms-grid-columns: 15rem auto;
       grid-template-columns: 15rem auto;
   grid-gap: 2rem;
@@ -1087,6 +1087,7 @@ footer .footer--link {
 
 .products-page-wrapper .filter-navigation {
   -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: nav;
   height: 100%;
@@ -1095,6 +1096,21 @@ footer .footer--link {
 
 .products-page-wrapper .nav-header {
   display: none;
+}
+
+.products-page-wrapper #sort {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  justify-self: flex-end;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: #fff;
+  font-weight: 500;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: sort;
+  margin-right: 1rem;
 }
 
 .products-page-wrapper .filter-wrapper {
@@ -1147,7 +1163,7 @@ footer .footer--link {
 }
 
 .products-listing {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: products;
   height: 100%;
