@@ -10,23 +10,25 @@ $(document).ready(() => {
   productDotClickSlider();
   bannerDragSlider();
   addToWishlist();
-  imageZoom("myimage", "myresult");
   setBannerWidth();
   bannerDotClickSlider();
-
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: false,
-    responsive: {
-      0: {
-        items: 2,
+  let isCarousel = document.querySelector(".owl-carousel")
+  imageZoom("myimage","myresult")
+  if(isCarousel){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      responsive: {
+        0: {
+          items: 2,
+        },
+        768: {
+          items: 4,
+        },
       },
-      768: {
-        items: 4,
-      },
-    },
-  });
+    });
+  }
 
   if ($(window).innerWidth() <= 768) {
     productTouchSlider();
@@ -35,7 +37,9 @@ $(document).ready(() => {
 
 const setBannerWidth = () => {
   let carousel = $(".carousel");
-  if (carousel) {
+  let isAvailable = document.querySelector(".carousel")
+  console.log(isAvailable);
+  if (isAvailable) {
     homeBannerLength = carousel[0].children.length;
     carousel.css("width", `${homeBannerLength * 100}%`);
     for (let i = 0; i < homeBannerLength; i++) {
@@ -128,8 +132,11 @@ function imageZoom(imgID, resultID) {
 
 const hidePreview = () => {
   console.log("out");
-  document.querySelector(".img-zoom-lens").style.display = "none";
-  $(".image-preview").css("display", "none");
+  let isAvailable = document.querySelector(".img-zoom-lens")
+  if(isAvailable){
+    document.querySelector(".img-zoom-lens").style.display = "none";
+    $(".image-preview").css("display", "none");
+  }
 };
 
 // Banner slide functions
