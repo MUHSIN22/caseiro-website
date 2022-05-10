@@ -5,6 +5,8 @@ let bannerSlideIndex = 0,
 let posX1, posX2;
 let slideInterval;
 
+let isMouseEntered = false;
+
 $(document).ready(() => {
   slideInterval = setInterval(autoSlider, 5000);
   productDotClickSlider();
@@ -13,7 +15,7 @@ $(document).ready(() => {
   setBannerWidth();
   bannerDotClickSlider();
   let isCarousel = document.querySelector(".owl-carousel")
-  imageZoom("myimage","myresult")
+
   if(isCarousel){
     $(".owl-carousel").owlCarousel({
       loop: true,
@@ -35,10 +37,81 @@ $(document).ready(() => {
   }
 });
 
+
+const setupImageZoom = () => {
+  let image = $(".main-image"),
+    zoomLens = $(".img-zoom-lens"),
+    result = $(".image-preview")
+  zoomLens.css("display","block")
+  result.css("display","block")
+
+
+  if(!isMouseEntered){
+    image.mousemove(moveLens)
+    isMouseEntered = true;
+  }
+
+  cx = result.width() / zoomLens.width();
+  cy = result.height() / zoomLens.height()
+  console.log(image.attr('src'));
+
+  result.css({
+    backgroundImage: `url(${image.attr('src')})`,
+    backgroundSize : (image.width() * cx) + "px " + (image.height() * cy) + "px"
+  })
+  
+  // zoomLens.mousemove(moveLens)
+
+  getCursorPosition()
+  
+}
+
+const moveLens = (e) => {
+  let lens = document.querySelector(".img-zoom-lens")
+  let img = document.querySelector(".main-image")
+  let zoomLens = $(".img-zoom-lens")
+  let  result = $(".image-preview")
+  let pos = getCursorPosition(e)
+  let x = pos.x - (lens.offsetWidth / 2)
+  let y = pos.y - (lens.offsetHeight / 2)
+  
+  if(x < 0) x = 0
+  if(y < 0) y = 0
+  if(x > img.width - lens.offsetWidth) x = img.width - lens.offsetWidth
+  if(y > img.height - lens.offsetHeight) y = img.height - lens.offsetHeight
+  $(".img-zoom-lens").css({
+    left: x + "px",
+    top: y + "px"
+  })
+
+  cx = result.width() / zoomLens.width();
+  cy = result.height() / zoomLens.height()
+
+  $(".image-preview").css({
+    backgroundPosition:  "-" + (x * cx) + "px -" + (y * cy) + "px"
+  })
+  
+}
+
+const getCursorPosition = (e) => {
+  e = e || window.event;
+  let bouding = document.querySelector(".main-image").getBoundingClientRect()
+  posX = e.pageX - bouding.left
+  posY = e.pageY - bouding.top
+  posX = posX - window.pageXOffset;
+  posY = posY - window.pageYOffset;
+  return {x:posX,y:posY}
+}
+
+const closeZoom = () => {
+  console.log("here");
+  $(".img-zoom-lens").css("display","none")
+  $(".image-preview").css("display","none")
+}
+
 const setBannerWidth = () => {
   let carousel = $(".carousel");
   let isAvailable = document.querySelector(".carousel")
-  console.log(isAvailable);
   if (isAvailable) {
     homeBannerLength = carousel[0].children.length;
     carousel.css("width", `${homeBannerLength * 100}%`);
@@ -50,94 +123,7 @@ const setBannerWidth = () => {
   }
 };
 
-function imageZoom(imgID, resultID) {
-  var img,
-    lens,
-    result,
-    cx,
-    cy,
-    enter = false;
-  img = document.getElementById(imgID);
-  result = document.getElementById(resultID);
-  if (img && result) {
-    /* Create lens: */
-    lens = document.createElement("DIV");
-    lens.setAttribute("class", "img-zoom-lens");
-    /* Insert lens: */
-    img.parentElement.insertBefore(lens, img);
-    /* Calculate the ratio between result DIV and lens: */
-    cx = result.offsetWidth / lens.offsetWidth;
-    cy = result.offsetHeight / lens.offsetHeight;
-    /* Set background properties for the result DIV */
-    result.style.backgroundImage = "url('" + img.src + "')";
-    result.style.backgroundSize =
-      img.width * cx + "px " + img.height * cy + "px";
-    /* Execute a function when someone moves the cursor over the image, or the lens: */
-    $(".img-zoom-lens").css("display", "none");
-    lens.addEventListener("mousemove", moveLens);
-    img.addEventListener("mousemove", moveLens);
-    /* And also for touch screens: */
-    lens.addEventListener("touchmove", moveLens);
-    img.addEventListener("touchmove", moveLens);
 
-    $(".image-preview").css("display", "none");
-
-    function moveLens(e) {
-      $(".img-zoom-lens").css("display", "block");
-      $(".image-preview").css("display", "block");
-      var pos, x, y;
-      /* Prevent any other actions that may occur when moving over the image */
-      e.preventDefault();
-      /* Get the cursor's x and y positions: */
-      pos = getCursorPos(e);
-      /* Calculate the position of the lens: */
-      x = pos.x - lens.offsetWidth / 2;
-      y = pos.y - lens.offsetHeight / 2;
-      /* Prevent the lens from being positioned outside the image: */
-      if (x > img.width - lens.offsetWidth) {
-        x = img.width - lens.offsetWidth;
-      }
-      if (x < 0) {
-        x = 0;
-      }
-      if (y > img.height - lens.offsetHeight) {
-        y = img.height - lens.offsetHeight;
-      }
-      if (y < 0) {
-        y = 0;
-      }
-      /* Set the position of the lens: */
-      lens.style.left = x + "px";
-      lens.style.top = y + "px";
-      /* Display what the lens "sees": */
-      result.style.backgroundPosition = "-" + x * cx + "px -" + y * cy + "px";
-    }
-    function getCursorPos(e) {
-      var a,
-        x = 0,
-        y = 0;
-      e = e || window.event;
-      /* Get the x and y positions of the image: */
-      a = img.getBoundingClientRect();
-      /* Calculate the cursor's x and y coordinates, relative to the image: */
-      x = e.pageX - a.left;
-      y = e.pageY - a.top;
-      /* Consider any page scrolling: */
-      x = x - window.pageXOffset;
-      y = y - window.pageYOffset;
-      return { x: x, y: y };
-    }
-  }
-}
-
-const hidePreview = () => {
-  console.log("out");
-  let isAvailable = document.querySelector(".img-zoom-lens")
-  if(isAvailable){
-    document.querySelector(".img-zoom-lens").style.display = "none";
-    $(".image-preview").css("display", "none");
-  }
-};
 
 // Banner slide functions
 const autoSlider = () => {
@@ -275,7 +261,6 @@ const productTouchSlider = () => {
     let touch = event.touches[0] || event.changedTouches[0];
     posX2 = touch.pageX;
     if (flag === 1) {
-      console.log("End");
       productSlide();
     }
   });
@@ -321,7 +306,6 @@ const closeSearch = () => {
 // Opening and closing of modal & modal related functions
 
 const openModal = () => {
-  console.log($(".modal-wrapper"));
   $(".modal-wrapper").css({ display: "flex" });
   $(".modal-wrapper").animate({ opacity: 1 }, 200, () => {
     $(".modal-container").animate({ opacity: 1 }, 500);
@@ -398,14 +382,12 @@ const openPasswordChange = () => {
 
 const addToWishlist = () => {
   $(".wishlist-outlined").click((event) => {
-    console.log(event.target.innerHTML);
     event.target.innerHTML = "favorite";
     event.target.styles();
   });
 };
 
 const avatar = (index) => {
-  console.log(index);
   $(".clicked").css({ "border-color": "#C4C4C4" });
   $(".clicked")
     .eq(index - 1)

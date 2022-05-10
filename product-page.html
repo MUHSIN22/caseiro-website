@@ -108,12 +108,13 @@
                         <!-- product image displaying container -->
             <div class="display-container">
                 
-                <div class="display-content" onmouseout="hidePreview()">
+                <div class="display-content">
                     <span onclick="romanticmode(event)" class="material-icons-outlined wishlist">
                         favorite_border
                         </span>
                     <div class="zoom-box">
-                        <img class="main-image" id="myimage" src="/assets/images/shoe.png" data-zoom-image="/assets/images/shoe.png" alt="">
+                        <div class="img-zoom-lens"></div>
+                        <img class="main-image" onmouseenter="setupImageZoom()" onmouseleave="closeZoom()" id="myimage" src="/assets/images/shoe.png" data-zoom-image="/assets/images/shoe.png" alt="">
                     </div>
                     <div class="slider-container">
                     <div class="display-slider">

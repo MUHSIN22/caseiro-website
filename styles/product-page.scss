@@ -82,7 +82,7 @@ $light-pink:#c44786;
             .image-preview{
                 width: 100%;
                 height: 100%;
-                // display: none;
+                display: none;
                 position: absolute;
                 top: 0;
                 right: -100%;
@@ -95,6 +95,8 @@ $light-pink:#c44786;
                 /*set the size of the lens:*/
                 width: 40%;
                 height: 40%;
+                display: none;
+                pointer-events: none;
               }
 
             .display-content {
