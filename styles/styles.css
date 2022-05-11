@@ -90,6 +90,10 @@ header .category {
   text-transform: uppercase;
   margin: 0 1rem;
   cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 header .category a {
@@ -97,13 +101,10 @@ header .category a {
   color: #0c0c0c;
 }
 
-header .category--active {
-  background-color: red;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
-  background-image: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+header .category:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
+  background: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+  color: #fff;
 }
 
 header .hamburger {
