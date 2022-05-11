@@ -1497,7 +1497,8 @@ footer{
         height: auto;
         padding-top: 5rem;
         grid-template-columns: 1fr;
-        grid-template-areas: 'products';
+        grid-template-areas: 'sort''products';
+        grid-gap: 1rem;
         .bread-crump{
             display: none;
         }

@@ -1769,7 +1769,8 @@ footer .footer--link {
     padding-top: 5rem;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'products';
+        grid-template-areas: "sort" "products";
+    grid-gap: 1rem;
   }
   .products-page-wrapper .bread-crump {
     display: none;
