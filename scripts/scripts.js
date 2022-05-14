@@ -370,6 +370,14 @@ const closeOrder = () => {
   });
 };
 
+const closeOrderStatus = () => {
+  $(".popup-container").animate({trasnform:"scale(0)"},300, () => {
+    $(".popup-bg").animate({opacity:0},300,()=>{
+      $(".popup-bg").css("display","none")
+    })
+  })
+}
+
 // Profile page
 
 //*Change Password slide
