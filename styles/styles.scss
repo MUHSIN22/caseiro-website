@@ -25,6 +25,15 @@ html{
     color: $black;
 
 }
+button,
+.btn{
+    transition: all 0.3s ease;
+
+    &:hover{
+        transform: translateY(-0.2rem);
+    }
+}
+
 
 
 // Carousel
@@ -94,6 +103,12 @@ header{
             color: #fff;
         }
         
+    }
+    .category-icon{
+        &:hover{
+            background: none;
+            color: #0c0c0c;
+        }
     }
     // .category--active{
     //     background-color: red;
@@ -387,6 +402,11 @@ header{
         position: relative;
         z-index: 3;
         width: 14rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.05);
+        }
     }
     .card-image--wrapper{
         width: 100%;
